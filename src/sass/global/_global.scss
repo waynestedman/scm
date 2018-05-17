@@ -1,0 +1,95 @@
+* {box-sizing: border-box;}
+body {
+  font-family: $baseFontFamily;
+  color: $baseFont-color;
+  background: $viewportBackground-color;
+}
+.content-wrapper {
+  font-weight: 300;
+  max-width: 1280px;
+  margin: 30px auto;
+  line-height: 1.4;
+  background: #fff;
+
+  .row {
+    margin: 0;
+  }
+  .column {
+    flex-direction: column;
+  }
+  .block-title {
+    text-align: center;
+    margin: 0;
+  }
+  .widget .block-title>strong {
+    font-size: 4rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+  }
+  .block.widget .products-grid .product-item {
+    margin: 0;
+  }
+  .widget.block-products-list .add-button {
+    font-weight: 400;
+
+    &:hover {
+      background: #00388D;
+      border: 1px solid #00388D;
+      color: #fff;
+    }
+  }
+  h1 {
+    font-size: 70px;
+    // font-weight: 300;
+  }
+  h2 {
+    font-size: 55px;
+    // font-weight: 300;
+  }
+  h3 {
+    font-size: 40px;
+    // font-weight: 300;
+  }
+  h4 {
+    font-size: 33px;
+    font-weight: 300;
+  }
+  h5 {
+    font-size: 30px;
+    // font-weight: 300;
+    margin-top: 2.6rem;
+    margin-bottom: .4rem;
+  }
+  h6 {
+    font-size: 17px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 18px;
+    // font-weight: 300;
+  }
+  .weight400 {
+    font-weight: 400;
+  }
+  a {
+    text-decoration: none;
+    color: $gray900;
+    // text-transform: uppercase;
+    cursor: pointer;
+  }
+  button {
+    color: $gray900;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: none;
+  }
+  .slick-arrow {
+    color: $gray700;
+    background: none;
+  }
+  .linkCTA {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
