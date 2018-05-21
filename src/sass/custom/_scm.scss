@@ -1,0 +1,59 @@
+$slideEdge: #8ccdc5;
+
+.scm, .story, .molecules, .products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.scm {
+  .info {
+    padding-left: 8.333333%;
+
+    p{
+      width: 50%;
+    }
+  }
+}
+
+.story {
+
+  .placard {
+    text-align: center;
+    padding: 4rem 5rem;
+    width: 50%;
+    margin: 5rem auto;
+    background-color: rgba(140, 205, 197, .06);
+    border-top: 3px solid darken($slideEdge, 20%);
+    border-right: 2px solid $slideEdge;
+    border-bottom: 4px solid darken($slideEdge, 15%);
+    border-left: 2px solid $slideEdge;
+    box-shadow: 2px 4px 12px 2px darken($slideEdge, 50%);
+  }
+}
+
+.molecules {
+  flex-wrap: wrap;
+
+  .drops {
+    width: 50%;
+  }
+  .chemical {
+    width: 30%;
+    padding: 2rem;
+  }
+  .dropper {
+    width: 30%;
+    img {
+      float: right;
+    }
+  }
+}
+
+.products {
+  .info {
+    padding-top: 5rem;
+    padding-left: 8.333333%;
+  }
+}

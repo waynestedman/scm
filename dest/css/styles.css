@@ -1,0 +1,191 @@
+/* Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color: #424649;
+  background: #DDDDDD;
+}
+
+.content-wrapper {
+  font-weight: 300;
+  max-width: 1280px;
+  margin: 30px auto;
+  line-height: 1.4;
+  background: #fff;
+}
+
+.content-wrapper .row {
+  margin: 0;
+}
+
+.content-wrapper .column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content-wrapper .block-title {
+  text-align: center;
+  margin: 0;
+}
+
+.content-wrapper .widget .block-title > strong {
+  font-size: 4rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+.content-wrapper .block.widget .products-grid .product-item {
+  margin: 0;
+}
+
+.content-wrapper .widget.block-products-list .add-button {
+  font-weight: 400;
+}
+
+.content-wrapper .widget.block-products-list .add-button:hover {
+  background: #00388D;
+  border: 1px solid #00388D;
+  color: #fff;
+}
+
+.content-wrapper h1 {
+  font-size: 70px;
+}
+
+.content-wrapper h2 {
+  font-size: 55px;
+}
+
+.content-wrapper h3 {
+  font-size: 40px;
+}
+
+.content-wrapper h4 {
+  font-size: 33px;
+  font-weight: 300;
+}
+
+.content-wrapper h5 {
+  font-size: 30px;
+  margin-top: 2.6rem;
+  margin-bottom: .4rem;
+}
+
+.content-wrapper h6 {
+  font-size: 17px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.content-wrapper p {
+  font-size: 18px;
+}
+
+.content-wrapper .weight400 {
+  font-weight: 400;
+}
+
+.content-wrapper a {
+  text-decoration: none;
+  color: #212121;
+  cursor: pointer;
+}
+
+.content-wrapper button {
+  color: #212121;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+}
+
+.content-wrapper .slick-arrow {
+  color: #424649;
+  background: none;
+}
+
+.content-wrapper .linkCTA {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.scm, .story, .molecules, .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.scm .info {
+  padding-left: 8.333333%;
+}
+
+.scm .info p {
+  width: 50%;
+}
+
+.story .placard {
+  text-align: center;
+  padding: 4rem 5rem;
+  width: 50%;
+  margin: 5rem auto;
+  background-color: rgba(140, 205, 197, 0.06);
+  border-top: 3px solid #4aa99e;
+  border-right: 2px solid #8ccdc5;
+  border-bottom: 4px solid #57b6aa;
+  border-left: 2px solid #8ccdc5;
+  -webkit-box-shadow: 2px 4px 12px 2px #1b3f3a;
+  box-shadow: 2px 4px 12px 2px #1b3f3a;
+}
+
+.molecules {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.molecules .drops {
+  width: 50%;
+}
+
+.molecules .chemical {
+  width: 30%;
+  padding: 2rem;
+}
+
+.molecules .dropper {
+  width: 30%;
+}
+
+.molecules .dropper img {
+  float: right;
+}
+
+.products .info {
+  padding-top: 5rem;
+  padding-left: 8.333333%;
+}
+
+
+
+/*# sourceMappingURL=styles.css.map */
