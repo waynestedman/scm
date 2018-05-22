@@ -126,6 +126,10 @@ body {
   margin-bottom: 20px;
 }
 
+.story, .video-carousel {
+  background: url("../../images/brushsteel.jpg") no-repeat fixed center;
+}
+
 .scm .info {
   padding-left: 8.333333%;
 }
@@ -134,17 +138,22 @@ body {
   width: 50%;
 }
 
+.story img {
+  width: 25%;
+  height: 25%;
+}
+
 .story .placard {
   text-align: center;
   padding: 4rem 5rem;
   width: 50%;
   margin: 5rem auto;
   background-color: rgba(140, 205, 197, 0.06);
-  border-top: 3px solid #4aa99e;
-  border-right: 2px solid #8ccdc5;
-  border-bottom: 4px solid #57b6aa;
-  border-left: 2px solid #8ccdc5;
-  box-shadow: 2px 4px 12px 2px #1b3f3a;
+  border-top: 2px solid #3a8684;
+  border-right: 1px solid #68bebc;
+  border-bottom: 3px solid #419896;
+  border-left: 1px solid #68bebc;
+  box-shadow: 2px 4px 12px 2px #0c1b1b;
 }
 
 .molecules {
@@ -162,10 +171,15 @@ body {
 
 .molecules .dropper {
   width: 30%;
+  margin-top: 90px;
 }
 
 .molecules .dropper img {
   float: right;
+}
+
+.products {
+  margin-top: -50px;
 }
 
 .products .info {

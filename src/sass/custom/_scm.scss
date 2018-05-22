@@ -1,4 +1,4 @@
-$slideEdge: #8ccdc5;
+$slideEdge: #68bebc;
 
 .scm, .story, .molecules, .products {
   display: flex;
@@ -6,7 +6,9 @@ $slideEdge: #8ccdc5;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-
+.story, .video-carousel {
+  background:  url("../../images/brushsteel.jpg") no-repeat fixed center; 
+}
 .scm {
   .info {
     padding-left: 8.333333%;
@@ -18,17 +20,21 @@ $slideEdge: #8ccdc5;
 }
 
 .story {
+  img {
+    width: 25%;
+    height: 25%;
 
+  }
   .placard {
     text-align: center;
     padding: 4rem 5rem;
     width: 50%;
     margin: 5rem auto;
     background-color: rgba(140, 205, 197, .06);
-    border-top: 3px solid darken($slideEdge, 20%);
-    border-right: 2px solid $slideEdge;
-    border-bottom: 4px solid darken($slideEdge, 15%);
-    border-left: 2px solid $slideEdge;
+    border-top: 2px solid darken($slideEdge, 20%);
+    border-right: 1px solid $slideEdge;
+    border-bottom: 3px solid darken($slideEdge, 15%);
+    border-left: 1px solid $slideEdge;
     box-shadow: 2px 4px 12px 2px darken($slideEdge, 50%);
   }
 }
@@ -45,6 +51,7 @@ $slideEdge: #8ccdc5;
   }
   .dropper {
     width: 30%;
+    margin-top: 90px;
     img {
       float: right;
     }
@@ -52,6 +59,8 @@ $slideEdge: #8ccdc5;
 }
 
 .products {
+  margin-top: -50px;
+
   .info {
     padding-top: 5rem;
     padding-left: 8.333333%;
