@@ -127,7 +127,7 @@ body {
 }
 
 .story, .video-carousel {
-  background: url("../../images/brushsteel.jpg") no-repeat fixed center;
+  background: url("../../images/brushsteel.jpg") no-repeat center;
 }
 
 .scm .info {
@@ -136,6 +136,10 @@ body {
 
 .scm .info p {
   width: 50%;
+}
+
+.scm .moleculePattern {
+  width: 100%;
 }
 
 .story img {
@@ -156,26 +160,47 @@ body {
   box-shadow: 2px 4px 12px 2px #0c1b1b;
 }
 
-.molecules {
-  flex-wrap: wrap;
-}
-
-.molecules .drops {
-  width: 50%;
-}
-
-.molecules .chemical {
+.story .chemical {
   width: 30%;
   padding: 2rem;
 }
 
-.molecules .dropper {
-  width: 30%;
-  margin-top: 90px;
+.molecules {
+  flex-wrap: wrap;
 }
 
-.molecules .dropper img {
-  float: right;
+.molecules .title {
+  width: 50%;
+}
+
+.molecules .traits {
+  flex-direction: column;
+}
+
+.molecules .traits .trait {
+  width: 30%;
+  padding: 2rem;
+}
+
+.molecules .microscope {
+  width: 30%;
+}
+
+.molecules .drops {
+  width: 30%;
+}
+
+.video-carousel .video {
+  max-width: 1068px;
+  height: 300px;
+  margin: 0 auto;
+  background: url("../../images/scm-video.jpg");
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+}
+
+.video-carousel .carousel {
+  text-align: center;
 }
 
 .products {
@@ -185,6 +210,10 @@ body {
 .products .info {
   padding-top: 5rem;
   padding-left: 8.333333%;
+}
+
+.products .products-img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
