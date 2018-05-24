@@ -119,84 +119,172 @@ body {
   text-transform: uppercase;
 }
 
-.scm, .story, .molecules, .products {
+.scm, .science, .story, .products {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.science, .video-carousel {
+  background: url("../../images/brushsteel.jpg");
+  background-size: 100% 100%;
+  width: 1280px;
+}
+
+.content-wrapper h1 {
+  font-size: 60px;
   margin-bottom: 20px;
 }
 
-.story, .video-carousel {
-  background: url("../../images/brushsteel.jpg") no-repeat center;
+.content-wrapper button {
+  background: #00388D;
+  border: 1px solid #00388D;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.content-wrapper button:hover {
+  background: #0061f3;
+  border: 1px solid #00388D;
+  color: #fff;
+}
+
+.scm .hero {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: -4px;
 }
 
 .scm .info {
-  padding-left: 8.333333%;
+  margin-left: -280px;
+  background: url("../../images/molecule-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: 104% 100%;
+  background-size: 40% 40%;
 }
 
-.scm .info p {
-  width: 50%;
+.scm .info .info-text {
+  padding-top: 80px;
+  padding-right: 60px;
+  padding-bottom: 80px;
+  padding-left: 40px;
 }
 
-.scm .moleculePattern {
-  width: 100%;
+.scm .info .info-text p {
+  width: 85%;
 }
 
-.story img {
-  width: 25%;
-  height: 25%;
+.science {
+  flex-direction: row;
 }
 
-.story .placard {
+.science .supportImg {
+  width: 70%;
+}
+
+.science .supportImg .supportImg-l {
+  margin-top: 80px;
+}
+
+.science .supportImg .supportImg-r {
+  width: 60%;
+  float: right;
+}
+
+.science .chemicals {
+  flex-direction: column;
+}
+
+.science .placard {
   text-align: center;
-  padding: 4rem 5rem;
-  width: 50%;
-  margin: 5rem auto;
-  background-color: rgba(140, 205, 197, 0.06);
+  padding: 30px 70px;
+  margin: 50px auto;
+  background-color: rgba(226, 251, 250, 0.15);
   border-top: 2px solid #3a8684;
   border-right: 1px solid #68bebc;
   border-bottom: 3px solid #419896;
   border-left: 1px solid #68bebc;
-  box-shadow: 2px 4px 12px 2px #0c1b1b;
+  box-shadow: -4px 8px 20px 0px rgba(27, 63, 62, 0.2);
 }
 
-.story .chemical {
-  width: 30%;
-  padding: 2rem;
+.science .placard .placardLine {
+  height: 6px;
+  width: 50px;
+  background-color: #68bebc;
+  margin: 0 auto 2rem auto;
 }
 
-.molecules {
+.science h6 {
+  margin: 0 auto 20px auto;
+  text-align: center;
+  color: #68bebc;
+}
+
+.science .chemical {
+  padding: 0 60px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.story {
   flex-wrap: wrap;
 }
 
-.molecules .title {
+.story .title {
   width: 50%;
+  padding-left: 10%;
+  margin-top: 24px;
 }
 
-.molecules .traits {
+.story .microscope {
+  width: 30%;
+  margin: -180px 0;
+}
+
+.story .traits {
+  width: 30%;
+  padding-left: 8.333333%;
   flex-direction: column;
+  z-index: 99;
 }
 
-.molecules .traits .trait {
-  width: 30%;
-  padding: 2rem;
+.story .traits h3 {
+  color: #68bebc;
 }
 
-.molecules .microscope {
-  width: 30%;
+.story .traits .trait {
+  padding: 24px 10px;
 }
 
-.molecules .drops {
-  width: 30%;
+.story .traits .dropsLine {
+  height: 70px;
+  width: 570px;
+  margin-left: 22%;
+  border-left: 1px solid #424649;
+  border-bottom: 1px solid #424649;
+}
+
+.story .drops {
+  z-index: 1;
+  width: 70%;
+  padding-right: 8.333333%;
 }
 
 .video-carousel .video {
+  color: #ffffff;
   max-width: 1068px;
-  height: 300px;
+  max-height: 150px;
   margin: 0 auto;
   background: url("../../images/scm-video.jpg");
   background-repeat: no-repeat;
-  background-size: 80% 80%;
+  background-size: 100%;
+  padding: 40px 80px;
+}
+
+.video-carousel .video i {
+  padding-right: 20px;
+  font-weight: 300;
 }
 
 .video-carousel .carousel {
@@ -204,16 +292,29 @@ body {
 }
 
 .products {
-  margin-top: -50px;
+  margin: 0;
+  height: 765px;
+  background: url("../../images/scm-products.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .products .info {
-  padding-top: 5rem;
+  padding-top: 8%;
   padding-left: 8.333333%;
+  width: 40%;
 }
 
-.products .products-img {
-  width: 100%;
+.products .info .productsLine {
+  height: 6px;
+  width: 50px;
+  background-color: #68bebc;
+  margin-bottom: 2rem;
+}
+
+.products .info .cta {
+  color: #68bebc;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=styles.css.map */

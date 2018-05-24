@@ -1,71 +1,154 @@
-$slideEdge: #68bebc;
+$scmTeal: #68bebc;
 
-.scm, .story, .molecules, .products {
+.scm, .science, .story, .products {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
-.story, .video-carousel {
-  background:  url("../../images/brushsteel.jpg") no-repeat center;
+.science, .video-carousel {
+  background:  url("../../images/brushsteel.jpg");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  background-size: 100% 100%;
+  width: 1280px;
 }
-.scm {
-  .info {
-    padding-left: 8.333333%;
+.content-wrapper {
+  h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  button {
+    background: #00388D;
+    border: 1px solid #00388D;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
 
-    p{
-      width: 50%;
+    &:hover {
+      background: lighten(#00388D, 20%);
+      border: 1px solid #00388D;
+      color: #fff;
     }
   }
-  .moleculePattern {
-    width: 100%;
+}
+
+.scm {
+
+  .hero {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: -4px;
+  }
+  .info {
+    // width: 100%;
+    margin-left: -280px;
+    background:  url("../../images/molecule-pattern.svg"); background-repeat: no-repeat;
+    background-position: 104% 100%;
+    background-size: 40% 40%;
+
+    .info-text {
+      padding-top: 80px;
+      padding-right: 60px;
+      padding-bottom: 80px;
+      padding-left: 40px;
+
+      p {
+        width: 85%;
+      }
+    }
+  }
+  // .moleculePattern {
+  //   width: 100%;
+  // }
+}
+
+.science {
+  flex-direction: row;
+
+  .supportImg {
+    width: 70%;
+
+    .supportImg-l {
+      margin-top: 80px;
+    }
+    .supportImg-r {
+      width: 60%;
+      float: right;
+    }
+  }
+  .chemicals {
+    flex-direction: column;
+  }
+  .placard {
+    text-align: center;
+    padding: 30px 70px;
+    // width: 50%;
+    margin: 50px auto;
+    background-color: rgba(226, 251, 250, .15);
+    border-top: 2px solid darken($scmTeal, 20%);
+    border-right: 1px solid $scmTeal;
+    border-bottom: 3px solid darken($scmTeal, 15%);
+    border-left: 1px solid $scmTeal;
+    box-shadow: -4px 8px 20px 0px darken(rgba(104, 190, 188, .2), 40%);
+
+    .placardLine {
+      height: 6px;
+      width: 50px;
+      background-color: $scmTeal;
+      margin: 0 auto 2rem auto;
+    }
+  }
+  h6 {
+      margin: 0 auto 20px auto;
+      text-align: center;
+      color: $scmTeal;
+  }
+  .chemical {
+    // width: 30%;
+    padding: 0 60px;
+    margin: 0 auto 20px auto;
+    text-align: center;
   }
 }
 
 .story {
-  img {
-    width: 25%;
-    height: 25%;
-
-  }
-  .placard {
-    text-align: center;
-    padding: 4rem 5rem;
-    width: 50%;
-    margin: 5rem auto;
-    background-color: rgba(140, 205, 197, .06);
-    border-top: 2px solid darken($slideEdge, 20%);
-    border-right: 1px solid $slideEdge;
-    border-bottom: 3px solid darken($slideEdge, 15%);
-    border-left: 1px solid $slideEdge;
-    box-shadow: 2px 4px 12px 2px darken($slideEdge, 50%);
-  }
-  .chemical {
-    width: 30%;
-    padding: 2rem;
-  }
-}
-
-.molecules {
   flex-wrap: wrap;
 
   .title {
     width: 50%;
+    padding-left: 10%;
+    margin-top: 24px;
   }
-  .traits {
-    flex-direction: column;
-    
-    .trait {
-      width: 30%;
-      padding: 2rem;
-    }
-  }
-
   .microscope {
     width: 30%;
+    margin: -180px 0;
+  }
+  .traits {
+    width: 30%;
+    padding-left: 8.333333%;
+    flex-direction: column;
+    z-index: 99;
+
+    h3 {
+      color: $scmTeal;
+    }
+    .trait {
+      // width: 30%;
+      padding: 24px 10px;
+    }
+    .dropsLine {
+      height: 70px;
+      width: 570px;
+      // margin-top: 20px;
+      margin-left: 22%;
+      border-left: 1px solid $gray700;
+      border-bottom: 1px solid $gray700;
+    }
   }
   .drops {
-    width: 30%;
+    z-index: 1;
+    width: 70%;
+    padding-right: 8.333333%;
     // margin-top: 90px;
     // img {
     //   float: right;
@@ -74,25 +157,44 @@ $slideEdge: #68bebc;
 }
 .video-carousel {
   .video {
+    color: #ffffff;
     max-width: 1068px;
-    height: 300px;
+    max-height: 150px;
     margin: 0 auto;
     background: url('../../images/scm-video.jpg');
     background-repeat: no-repeat;
-    background-size: 80% 80%;
+    background-size: 100%;
+    padding: 40px 80px;
+    i {
+      padding-right: 20px;
+      font-weight: 300;
+    }
   }
   .carousel {
     text-align: center;
   }
 }
 .products {
-  margin-top: -50px;
+  margin: 0;
+  height: 765px;
+  background: url('../../images/scm-products.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 
   .info {
-    padding-top: 5rem;
+    padding-top: 8%;
     padding-left: 8.333333%;
-  }
-  .products-img {
-    width: 100%;
+    width: 40%;
+
+    .productsLine {
+      height: 6px;
+      width: 50px;
+      background-color: $scmTeal;
+      margin-bottom: 2rem;
+    }
+    .cta {
+      color: $scmTeal;
+      text-transform: uppercase;
+    }
   }
 }
