@@ -35,15 +35,20 @@ $scmTeal: #68bebc;
 .scm {
 
   .hero {
-    max-width: 100%;
-    max-height: 100%;
+    // max-width: 100%;
+    // max-height: 100%;
     margin-bottom: -4px;
+
+    img {
+      width: 992px;
+      max-width: none;
+    }
   }
   .info {
     // width: 100%;
-    margin-left: -280px;
+    margin-left: -450px;
     background:  url("../../images/molecule-pattern.svg"); background-repeat: no-repeat;
-    background-position: 104% 100%;
+    background-position: 100% 110%;
     background-size: 40% 40%;
 
     .info-text {
@@ -74,6 +79,8 @@ $scmTeal: #68bebc;
     .supportImg-r {
       width: 60%;
       float: right;
+      margin-left: 40px;
+      margin-top: 6px;
     }
   }
   .chemicals {
@@ -81,7 +88,7 @@ $scmTeal: #68bebc;
   }
   .placard {
     text-align: center;
-    padding: 30px 70px;
+    padding: 30px 80px;
     // width: 50%;
     margin: 50px auto;
     background-color: rgba(226, 251, 250, .15);
@@ -102,6 +109,7 @@ $scmTeal: #68bebc;
       margin: 0 auto 20px auto;
       text-align: center;
       color: $scmTeal;
+      font-weight: 600;
   }
   .chemical {
     // width: 30%;
@@ -120,8 +128,8 @@ $scmTeal: #68bebc;
     margin-top: 24px;
   }
   .microscope {
-    width: 30%;
-    margin: -180px 0;
+    width: 35%;
+    margin: -180px 0 -300px 0;
   }
   .traits {
     width: 30%;
@@ -145,7 +153,7 @@ $scmTeal: #68bebc;
       border-bottom: 1px solid $gray700;
     }
   }
-  .drops {
+  .molecules {
     z-index: 1;
     width: 70%;
     padding-right: 8.333333%;
@@ -156,7 +164,7 @@ $scmTeal: #68bebc;
   }
 }
 .video-carousel {
-  .video {
+  .video-thumbnail {
     color: #ffffff;
     max-width: 1068px;
     max-height: 150px;
@@ -195,6 +203,7 @@ $scmTeal: #68bebc;
     .cta {
       color: $scmTeal;
       text-transform: uppercase;
+      margin-top: 20px;
     }
   }
 }

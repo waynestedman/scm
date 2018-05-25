@@ -1,0 +1,653 @@
+<style xml="space"><!--
+.regimen-wrapper img {
+	max-width: 100%;
+	height: auto;
+	width: 100%;
+}
+a.cta {
+	border: 1px solid #ff8a65;
+	background-color: #ffffff;
+	color: #ff8a65;
+	text-align: center;
+	width: 200px;
+	height: 46px;
+	display: inline-block;
+	position: relative;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 25px 0;
+	font-weight: 400;
+	line-height: 40px;
+}
+a.cta:hover {
+	text-decoration: none;
+	background-color: #ff8a65;
+	color: #ffffff;
+}
+.top50 {
+	margin-top: 50px;
+}
+.regimen-wrapper {
+	box-sizing: border-box !important;
+	width: 1270px;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: inherit;
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: 300;
+	color: #000000;
+	position: relative;
+}
+.regimen-wrapper p { margin-bottom: 0 !important; }
+.regimen-wrapper img { margin: 0 !important; }
+.regimen-intro {
+	padding: 0 0 25px 100px;
+}
+.regimen-wrapper h1, .regimen-wrapper h2 {
+	font-weight: 400;
+}
+.regimen-intro h1, .regimen-intro p {
+	width: 50%;
+	padding-right: 100px;
+}
+.intro-hero {
+	float: right;
+	width: 50%;
+}
+.intro-hero img {
+	margin-top: -350px !important;
+}
+.diagram {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 50%;
+}
+.diagram-img {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 75%;
+	flex: 0 0 75%;
+	margin: 25px auto;
+}
+.step-intro {
+	display: none;
+	background-color: #ff8a65;
+	color: #ffffff;
+	text-align: center;
+	padding: 5px;
+	text-transform: uppercase;
+}
+.step-1 {
+	clear: both;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+}
+.step-2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	margin-top: -5px;
+}
+.step-child {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 50%;
+	flex: 1 1 50%;
+}
+.step-child h2 {
+	color: #ff8a65;
+}
+.step-child h2, .step-child p {
+	padding: 0 100px;
+}
+.product-name {
+	font-weight: 500;
+}
+.tip {
+	background-color: #eeeeee;
+	width: 80%;
+	border-radius: 5px;
+	padding: 25px;
+	margin: 0 auto;
+}
+.tip p {
+	margin: 0;
+	padding: 0;
+}
+.step-3 {
+	background-color: #ffdbd0;
+	padding: 50px 100px;
+	margin-top: -6px;
+	text-align: center;
+}
+.step-3-hero {
+	margin: 0 0 0 200px;
+}
+.ingredients-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	margin: -80px auto 0;
+	width: 70%;
+}
+.ingredient {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 30%;
+	flex: 0 0 30%;
+	margin: 5%;
+}
+.ingredient-name {
+	color: #c62828;
+	font-weight: 700;
+	margin-bottom: 0 !important;
+}
+.description {
+	margin-top: 0;
+	font-style: italic;
+	font-size: 0.8em;
+	padding: 0 25px 0 25px;
+	line-height: 1.2em;
+}
+.testimonials {
+	background-color: #ffffff;
+	width: 90%;
+	margin: 50px auto;
+	padding: 0.5em 1em;
+}
+.quote-header {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 100%;
+	flex: 1 1 100%;
+}
+.quote-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+.quote1, .quote2 {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 50%;
+	flex: 1 1 50%;
+	padding: 20px 50px;
+}
+.quote1 {
+	background-image: url(https://www.dhcbeauty.com/media/wysiwyg/content/os_content/open_quote_1x.jpg);
+	background-repeat: no-repeat;
+	background-position: top 20% left 50%;
+}
+.quote2 {
+	background-image: url(https://www.dhcbeauty.com/media/wysiwyg/content/os_content/close_quote_x1.jpg);
+	background-repeat: no-repeat;
+	background-position: top 20% left 50%;
+}
+.quote {
+	font-style: italic;
+}
+.booster-wrapper {
+	background-color: #eeeeee;
+	margin-top: -5px;
+	text-align: center;
+	padding: 50px 100px;
+}
+.booster-wrapper h2 {
+	color: #f06292;
+}
+.booster-wrapper p {
+	padding: 0 100px;
+}
+.booster-wrapper img {
+	margin-top: 100px;
+}
+.blog-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	padding: 20px 0;
+	-webkit-box-pack: space-around;
+	-ms-flex-pack: space-around;
+	justify-content: space-around;
+}
+.double-cleanse {
+	z-index: 1000;
+	position: absolute;
+	width: 211px;
+	margin: 49% 42% 0;
+}
+.simple-solution {
+	z-index: 1001;
+	position: absolute;
+	width: 211px;
+	margin-top: 480px;
+	margin-left: 159px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+.double-cleanse, .simple-solution {
+	display: none;
+}
+.step-intro {
+	display: block;
+	color: #ffffff;
+	background-color: #ff8a65;
+	text-transform: uppercase;
+}
+.regimen-wrapper {
+	width: 100%;
+}
+.intro-hero {
+	float: none;
+	margin-top: 0;
+	width: 100%;
+}
+.intro-hero img {
+	margin-top: 25px !important;
+}
+.regimen-intro {
+	padding: 25px;
+}
+.regimen-intro h1, .regimen-intro p {
+	width: 100%;
+	padding-right: 0;
+}
+.diagram {
+	width: 100%;
+}
+.step-1, .step-2 {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	text-align: center;
+}
+.step-child {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 100%;
+	flex: 1 1 100%;
+}
+.step-1:nth-child(1) {
+	margin-bottom: 25px;
+}
+.step-child h2, .step-child p {
+	padding: 0;
+}
+.tip {
+	width: 100%;
+	margin-bottom: 50px;
+}
+.step-2 {
+	margin-top: 0;
+}
+.step-3 {
+	margin-top: 0;
+	padding: 20px 10px;
+}
+.step-3-hero {
+	margin: 0 0 50px 70px;
+}
+.ingredients-wrapper {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: -60px auto 0;
+	}
+.ingredient {
+	margin: 0 3%;
+}
+.ingredient.jelly {
+	margin: 0 27%;
+}
+.ingredient-name {
+	font-size: 0.8em;
+}
+.description {
+	font-size: 0.6em;
+	margin-bottom: 1em;
+}
+.testimonials {
+	width: 100%;
+}
+.quote-wrapper {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.quote1, .quote2 {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 100%;
+	flex: 1 1 100%;
+	padding: 0;
+}
+.quote2 {
+	display: none;
+}
+.booster-wrapper {
+	margin-top: 0;
+	padding: 20px 10px;
+	display: block;
+}
+.booster-wrapper p {
+	padding: 0;
+}
+.blog-wrapper {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+}
+.blog-child {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 100%;
+	flex: 1 1 100%;
+	margin-bottom: 25px;
+}
+}
+
+@media screen and (min-width: 641px) and (max-width: 800px) {
+.double-cleanse, .simple-solution {
+	display: none;
+}
+.step-intro {
+	display: block;
+	color: #ffffff;
+	background-color: #ff8a65;
+	text-transform: uppercase;
+}
+.regimen-wrapper {
+	width: 100%;
+}
+.regimen-intro {
+	padding: 0 0 25px 25px;
+}
+.regimen-intro h1, .regimen-intro p {
+	padding-right: 25px;
+}
+.intro-hero img {
+	margin-top: -400px !important;
+}
+.step-child h2 {
+	padding: 0 15px;
+	font-size: 1.2em;
+}
+.step-child p {
+	padding: 0 15px;
+	font-size: 0.8em;
+}
+.tip {
+	width: 90%;
+	padding: 12px;
+	line-height: 1em;
+}
+.step-3 {
+	padding: 25px;
+}
+.step-3 p {
+	font-size: 0.95em;
+}
+.ingredients-wrapper {
+/*
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+*/
+	width: 80%;
+	margin: -60px auto 0;
+}
+.testimonials {
+	width: 100%;
+}
+.quote1, .quote2 {
+	padding: 15px;
+}
+.booster-wrapper {
+	padding: 50px;
+}
+.booster-wrapper p {
+	padding: 0;
+}
+}
+
+@media screen and (min-width: 801px) and (max-width: 980px) {
+.regimen-wrapper {
+	width: 100%;
+}
+.regimen-intro {
+	padding: 0 0 25px 25px;
+}
+.regimen-intro h1, .regimen-intro p {
+	padding-right: 25px;
+}
+.ingredients-wrapper {
+	margin-top: 0;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.testimonials {
+	width: 100%;
+}
+.quote1, .quote2 {
+	padding: 25px;
+}
+.booster-wrapper {
+	padding: 50px;
+}
+}
+
+@media screen and (min-width: 981px) and (max-width: 1099px) {
+.regimen-wrapper {
+	width: 100%;
+}
+.ingredients-wrapper {
+	margin: 0 auto;
+	width: 70%;
+}
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+.regimen-wrapper {
+	width: 100%;
+}
+.double-cleanse {
+	margin: 40% 40% 0;
+}
+.ingredients-wrapper {
+	margin: 0 auto;
+	width: 70%;
+}
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1269px) {
+.regimen-wrapper {
+	width: 100%;
+}
+.double-cleanse {
+	margin: 47% 42% 0;
+}
+.ingredients-wrapper {
+	margin-top: 0;
+}
+}
+
+@media screen and (min-width: 641px) and (max-width: 1099px) {
+.double-cleanse {
+	display: none;
+}
+.step-intro.top {
+	display: block;
+}
+}
+--></style>
+<div class="regimen-wrapper">
+<div class="regimen-intro">
+<h1>The Simple Japanese Regimen</h1>
+<p>Passed down from generation-to-generation, the traditional 3-step Japanese skincare regimen has been trusted for centuries to nourish skin and keep it looking and feeling refreshed.</p>
+<div class="intro-hero"><picture> <source media="(min-width: 640px)" srcset="/media/wysiwyg/content/os_content/3_step_products_1x.jpg" /> <source media="(min-width: 320px)" srcset="/media/wysiwyg/content/os_content/3-step-products_m_1x.jpg" /> <img src="/media/wysiwyg/content/os_content/3_step_products_1x.jpg" alt="simple Japanese regimen 3 products" width="640" /> </picture></div>
+<div class="diagram">
+<div class="diagram-img"><img src="/media/wysiwyg/content/os_content/simple_routine_1x.png" alt="Simple Routine" width="415" /></div>
+</div>
+</div>
+<!-- end regimen-intro -->
+<div class="step-intro top">
+<p>Double Cleanse Method</p>
+</div>
+<div class="double-cleanse"><img src="/media/wysiwyg/content/os_content/dcm_spot_1x.png" alt="Double Cleanse Method" width="211" /></div>
+<div class="step-1">
+<div class="step-child">
+<h2>Step 1: Remove Impurities</h2>
+<p class="product-name">Deep Cleansing Oil<sup>&reg;</sup></p>
+<p>Melt away all traces of a hectic day. Antioxidant-rich, olive and rosemary leaf oil infused formula gives your skin an extra boost while dissolving excess oil, pollutants, dirt and even waterproof mascara.</p>
+<p><a class="cta" href="/deep-cleansing-oil.html">shop now</a></p>
+</div>
+<div class="step-child"><img src="/media/wysiwyg/content/os_content/dco_1x.jpg" alt="Deep Cleansing Oil" width="633" /></div>
+</div>
+<!-- end step-1 -->
+<div class="step-2">
+<div class="step-child">
+<h2>Step 2: Cleanse</h2>
+<p class="product-name">Face Wash Powder</p>
+<p>Wash thoroughly. Gentle powder-to-foam formula mildly exfoliates with protease enzymes, while lavender flower extract soothes weary skin.</p>
+<p><a class="cta" href="/face-wash-powder.html">shop now</a></p>
+<div class="tip">
+<p><i><b>TIP:</b> Use with Foaming Mesh to create a voluminous lather.</i></p>
+</div>
+</div>
+<div class="step-child"><img src="/media/wysiwyg/content/os_content/fwp_1x.jpg" alt="Face Wash Powder" width="635" /></div>
+</div>
+<!-- end step-2 -->
+<div class="step-intro">
+<p>Simple 3-in-1 solution</p>
+</div>
+<div class="simple-solution"><img src="/media/wysiwyg/content/os_content/3in1_spot_1x.png" alt="Simple 3-in-1 Solution" width="211" /></div>
+<div class="step-3">
+<h2>Step 3: Tone / Hydrate / Brighten</h2>
+<p class="product-name">Astaxanthin Collagen All-in-One Gel</p>
+<p>In one easy step, this all-in-one moisturizer tones, hydrates and brightens. Collagen, royal jelly and squalane hydrate and soften your skin while providing extraordinary moisture. Key ingredient, astaxanthin, has been found to be 6,000 times more powerful than vitamin C, helping you to bask in an antioxidant-rich glow.</p>
+<p>This multi-action gel cream cuts your routine down to a one and done!</p>
+<p><a class="cta" href="/astaxanthin-collagen-all-in-one-gel.html">shop now</a></p>
+<div class="step-3-hero"><picture> <source media="(min-width: 400px)" srcset="/media/wysiwyg/content/os_content/astaxanthin_1x.png" /> <source media="(min-width: 320px)" srcset="/media/wysiwyg/content/os_content/astaxantin_m_1x.png" /> <img src="/media/wysiwyg/content/os_content/astaxanthin_1x.png" alt="Astaxanthin Collagen All-in-One Gel" width="877" /> </picture></div>
+<div class="ingredients-wrapper">
+<div class="ingredient"><img src="/media/wysiwyg/content/os_content/collagen_1x.png" alt="Collagen" width="180" />
+<p class="ingredient-name">Collagen</p>
+<p class="description">Promotes Softer, Smoother Skin</p>
+</div>
+<div class="ingredient"><img src="/media/wysiwyg/content/os_content/squalane_1x.png" alt="Squalane" width="180" />
+<p class="ingredient-name">Squalane</p>
+<p class="description">Protects Skin's Moisture Barrier</p>
+</div>
+<div class="ingredient jelly"><img src="/media/wysiwyg/content/os_content/royal_jelly_1x.png" alt="Royal Jelly" width="180" />
+<p class="ingredient-name">Royal Jelly</p>
+<p class="description">Moisturises &amp; Revitalises</p>
+</div>
+</div>
+<div class="testimonials top50">
+<h2 class="quote-header">Customer Testimonials</h2>
+<div class="quote-wrapper">
+<div class="quote1">
+<p class="quote">I love the all-in-one application. So convenient. The moment it hits my skin it soaks right in and feels soft, never sticky. This has become my favourite skin care product.</p>
+<p class="author">Lorraine</p>
+</div>
+<div class="quote2">
+<p class="quote">It is so nice to have a one-step product that does such a good job. The texture is nice and works into the skin well. It is not greasy and leaves a nice finish.</p>
+<p class="author">Molly</p>
+</div>
+</div>
+<!-- end quote-wrapper --></div>
+</div>
+<!-- end step-3 -->
+<div class="booster-wrapper">
+<h2>+ Add a Booster</h2>
+<p class="product-name">Beauty Lift Eye Care Essence Roll-On</p>
+<p>Target problem areas with a booster or serum. Try our innovative Beauty Lift Eye Care Essence Roll-On, designed with a tri-roller baller, to soothe puffiness and fight fine lines around the eye area.</p>
+<p><a class="cta" href="/beauty-lift-eye-care-essence-roll-on.html">shop now</a></p>
+<img src="/media/wysiwyg/content/os_content/beauty_lift_1x.png" alt="Beauty Lift Eye Care Essence Roll-On" width="866" /></div>
+<!-- end booster-wrapper -->
+<div class="blog-wrapper">
+<div class="blog-child"><a href="/blog/do-you-double-cleanse/"><img src="/media/wysiwyg/content/os_content/blog_double-cleanse_1x_rev2.jpg" alt="The Art of the Double Cleanse: blog post" width="391" border="0" /></a></div>
+<div class="blog-child"><a id="openVideo" href="#"><img src="/media/wysiwyg/content/os_content/video_your-daily-skincare_1x.jpg" alt="Your All-in-One Daily Skincare Solution: video" width="391" border="0" /></a></div>
+<div class="blog-child"><a href="/blog/the-truth-about-serums-uk/"><img src="/media/wysiwyg/content/os_content/blog_truth-about-serums_1x.jpg" alt="The Truth About Serums: blog post" width="391" border="0" /></a></div>
+</div>
+<!-- end blog-wrapper --></div>
+<!-- end regimen-wrapper -->
+<div id="video">
+<div class="wistia_responsive_padding" style="padding: 48% 0 0 0; position: relative; overflow: scroll;">
+<div class="wistia_responsive_wrapper" style="left: 0; position: absolute; top: 0; width: 100%; height: 100%;"><iframe id="simple-iframe" title="Wistia video player" src="https://fast.wistia.net/embed/iframe/yejb0pu861?videoFoam=true" name="wistia_embed" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>
+</div>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async="" type="text/javascript" xml="space">// <![CDATA[
+//
+
+//
+// ]]></script>
+</div>
+<script type="text/javascript" xml="space">// <![CDATA[
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+require([ 'jquery', 'Magento_Ui/js/modal/modal'], function($){
+
+  var videoModal = $('#video').modal();
+  $('#openVideo').on('click', function(e) {
+      e.preventDefault();
+      videoModal.modal('openModal');
+     $("#simple-iframe").attr('src', "https://fast.wistia.net/embed/iframe/yejb0pu861?videoFoam=true&autoplay=1");
+  });
+
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// ]]></script>

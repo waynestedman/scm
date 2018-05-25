@@ -162,16 +162,19 @@ body {
 }
 
 .scm .hero {
-  max-width: 100%;
-  max-height: 100%;
   margin-bottom: -4px;
 }
 
+.scm .hero img {
+  width: 992px;
+  max-width: none;
+}
+
 .scm .info {
-  margin-left: -280px;
+  margin-left: -450px;
   background: url("../../images/molecule-pattern.svg");
   background-repeat: no-repeat;
-  background-position: 104% 100%;
+  background-position: 100% 110%;
   background-size: 40% 40%;
 }
 
@@ -204,6 +207,8 @@ body {
 .science .supportImg .supportImg-r {
   width: 60%;
   float: right;
+  margin-left: 40px;
+  margin-top: 6px;
 }
 
 .science .chemicals {
@@ -215,7 +220,7 @@ body {
 
 .science .placard {
   text-align: center;
-  padding: 30px 70px;
+  padding: 30px 80px;
   margin: 50px auto;
   background-color: rgba(226, 251, 250, 0.15);
   border-top: 2px solid #3a8684;
@@ -237,6 +242,7 @@ body {
   margin: 0 auto 20px auto;
   text-align: center;
   color: #68bebc;
+  font-weight: 600;
 }
 
 .science .chemical {
@@ -257,8 +263,8 @@ body {
 }
 
 .story .microscope {
-  width: 30%;
-  margin: -180px 0;
+  width: 35%;
+  margin: -180px 0 -300px 0;
 }
 
 .story .traits {
@@ -287,13 +293,13 @@ body {
   border-bottom: 1px solid #424649;
 }
 
-.story .drops {
+.story .molecules {
   z-index: 1;
   width: 70%;
   padding-right: 8.333333%;
 }
 
-.video-carousel .video {
+.video-carousel .video-thumbnail {
   color: #ffffff;
   max-width: 1068px;
   max-height: 150px;
@@ -304,7 +310,7 @@ body {
   padding: 40px 80px;
 }
 
-.video-carousel .video i {
+.video-carousel .video-thumbnail i {
   padding-right: 20px;
   font-weight: 300;
 }
@@ -337,6 +343,7 @@ body {
 .products .info .cta {
   color: #68bebc;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 
 
