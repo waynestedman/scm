@@ -18,10 +18,18 @@ body {
   background: #DDDDDD;
 }
 
+.cms-page-view .column.main img {
+  margin: 0;
+}
+
+.columns .column.main {
+  padding-bottom: 0;
+}
+
 .content-wrapper {
   font-weight: 300;
   max-width: 1280px;
-  margin: 30px auto;
+  margin: 0 auto;
   line-height: 1.4;
   background: #fff;
 }
@@ -57,6 +65,18 @@ body {
   background: #00388D;
   border: 1px solid #00388D;
   color: #fff;
+}
+
+.content-wrapper .product-item-link {
+  text-transform: none;
+}
+
+.content-wrapper .widget.block-products-list .product-item-name {
+  height: 52px;
+}
+
+.content-wrapper .price-wrapper {
+  font-weight: 400;
 }
 
 .content-wrapper h1 {
@@ -125,8 +145,9 @@ body {
   justify-content: space-between;
 }
 
-.science, .video-carousel {
+.science, .carousel {
   background: url("../../images/brushsteel.jpg");
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 1280px;
 }
@@ -148,10 +169,6 @@ body {
   background: #0061f3;
   border: 1px solid #00388D;
   color: #fff;
-}
-
-.scm .hero {
-  margin-bottom: -4px;
 }
 
 .scm .hero img {
@@ -245,7 +262,7 @@ body {
 
 .story .microscope {
   width: 35%;
-  margin: -180px 0 -300px 0;
+  margin: -180px 0 -250px 0;
 }
 
 .story .traits {
@@ -278,23 +295,44 @@ body {
 }
 
 .video-carousel .video-thumbnail {
-  color: #ffffff;
   max-width: 1068px;
   max-height: 150px;
   margin: 0 auto;
-  background: url("../../images/scm-video.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  padding: 40px 80px;
+  position: relative;
 }
 
-.video-carousel .video-thumbnail i {
-  padding-right: 20px;
-  font-weight: 300;
+.video-carousel .video-thumbnail .video-text {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+}
+
+.video-carousel .video-thumbnail .video-text img {
+  display: inline-block;
+  margin-right: 22px;
+}
+
+.video-carousel .video-thumbnail .video-text h4 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.video-carousel .video-thumbnail .video-button {
+  margin-right: 20px;
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
 }
 
 .video-carousel .carousel {
+  margin-top: -75px;
+  padding: 100px 0;
   text-align: center;
+}
+
+.video-carousel .carousel .widget.block-products-list .add-button {
+  font-weight: 400;
 }
 
 .products {
