@@ -58,15 +58,15 @@ body {
     // font-weight: 300;
   }
   h2 {
-    font-size: 55px;
+    font-size: 60px;
     // font-weight: 300;
   }
   h3 {
-    font-size: 40px;
+    font-size: 50px;
     // font-weight: 300;
   }
   h4 {
-    font-size: 33px;
+    font-size: 40px;
     font-weight: 300;
   }
   h5 {
@@ -76,7 +76,7 @@ body {
     margin-bottom: .4rem;
   }
   h6 {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 300;
     text-transform: uppercase;
   }
@@ -90,7 +90,6 @@ body {
   a {
     text-decoration: none;
     color: $gray900;
-    // text-transform: uppercase;
     cursor: pointer;
   }
   button {
@@ -98,6 +97,16 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     background: none;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .cta {
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
   .slick-arrow {
     color: $gray700;

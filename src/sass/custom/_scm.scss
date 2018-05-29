@@ -6,10 +6,10 @@ $scmTeal: #68bebc;
   justify-content: space-between;
 }
 .science, .carousel {
-  background:  url("../../images/brushsteel.jpg");
+  background:  url('https://www.dhccare.com/media/wysiwyg/content/product/scm/brushsteel.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 1280px;
+  max-width: 1280px;
 }
 .content-wrapper {
   h1 {
@@ -17,33 +17,33 @@ $scmTeal: #68bebc;
     margin-bottom: 20px;
   }
   button {
-    background: #00388D;
-    border: 1px solid #00388D;
+    background: $scmTeal;
+    border: 1px solid $scmTeal;
     color: #fff;
     padding: 10px 20px;
     margin-top: 20px;
 
     &:hover {
-      background: lighten(#00388D, 20%);
-      border: 1px solid #00388D;
+      background: lighten($scmTeal, 20%);
+      border: 1px solid $scmTeal;
       color: #fff;
     }
   }
 }
 
 .scm {
-
   .hero {
-    // margin-bottom: -4px;
-
     img {
       width: 992px;
       max-width: none;
     }
+    h1 {
+      display: none;
+    }
   }
   .info {
     margin-left: -450px;
-    background:  url("../../images/molecule-pattern.svg"); background-repeat: no-repeat;
+    background:  url("https://www.dhccare.com/media/wysiwyg/content/product/scm/molecule-pattern.svg"); background-repeat: no-repeat;
     background-position: 100% 110%;
     background-size: 40% 40%;
 
@@ -53,7 +53,8 @@ $scmTeal: #68bebc;
       padding-bottom: 80px;
       padding-left: 40px;
 
-      p {
+      h6 {
+        text-transform: none;
         width: 85%;
       }
     }
@@ -62,33 +63,40 @@ $scmTeal: #68bebc;
 
 .science {
   flex-direction: row;
+  flex-wrap: wrap;
 
-  .supportImg {
-    width: 70%;
-
-    .supportImg-l {
-      margin-top: 80px;
-    }
-    .supportImg-r {
-      width: 60%;
-      float: right;
-      margin-left: 40px;
-      margin-top: 6px;
-    }
+  .supportImg-l {
+    width: 30%;
+    margin-top: 80px;
+    order: 1;
+  }
+  .supportImg-r {
+    width: 20%;
+    float: right;
+    margin-left: 40px;
+    margin-top: 6px;
+    order: 3;
   }
   .chemicals {
     flex-direction: column;
+    margin: 0 auto;
+    width: 40%;
+    margin-top: -340px;
+    order: 4;
   }
   .placard {
+    width: 50%;
+    height: 400px;
     text-align: center;
     padding: 30px 80px;
-    margin: 50px auto;
+    margin: 50px 0 50px -80px;
     background-color: rgba(226, 251, 250, .15);
-    border-top: 2px solid darken($scmTeal, 20%);
+    border-top: 2px solid darken($scmTeal, 15%);
     border-right: 1px solid $scmTeal;
-    border-bottom: 3px solid darken($scmTeal, 15%);
+    border-bottom: 2px solid darken($scmTeal, 15%);
     border-left: 1px solid $scmTeal;
     box-shadow: -4px 8px 20px 0px darken(rgba(104, 190, 188, .2), 40%);
+    order: 2;
 
     .placardLine {
       height: 6px;
@@ -114,7 +122,7 @@ $scmTeal: #68bebc;
   flex-wrap: wrap;
 
   .title {
-    width: 50%;
+    width: 60%;
     padding-left: 10%;
     margin-top: 24px;
   }
@@ -183,15 +191,15 @@ $scmTeal: #68bebc;
 
     .widget.block-products-list .add-button {
       font-weight: 400;
-      // background: #00388D;
-      // border: 1px solid #00388D;
+      // background: $blue700;
+      // border: 1px solid $blue700;
       // color: #fff;
       // padding: 10px 20px;
       // margin-top: 20px;
       //
       // &:hover {
-      //   background: lighten(#00388D, 20%);
-      //   border: 1px solid #00388D;
+      //   background: lighten($blue700, 20%);
+      //   border: 1px solid $blue700;
       //   color: #fff;
       // }
     }
@@ -200,7 +208,7 @@ $scmTeal: #68bebc;
 .products {
   margin: 0;
   height: 765px;
-  background: url('../../images/scm-products.png');
+  background: url('https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-products.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
@@ -219,6 +227,10 @@ $scmTeal: #68bebc;
       color: $scmTeal;
       text-transform: uppercase;
       margin-top: 20px;
+      font-weight: 400;
     }
+  }
+  .productsImg-mobile {
+    display: none;
   }
 }

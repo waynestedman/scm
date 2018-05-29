@@ -5,7 +5,7 @@
   <title>Super Collagen Mist</title>
   <link rel="stylesheet" href="./ae-css/8213.css">
   <link rel="stylesheet" href="./ae-css/styles-l.css">
-  <link rel="stylesheet" type="text/css" media="all" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" type="text/css" media="all" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="./dest/css/styles.css">
   <!-- <link rel="stylesheet" href="./slick/slick.css"/>
   <link rel="stylesheet" href="./slick/slick-theme.css"/> -->
@@ -14,28 +14,37 @@
   <div class="content-wrapper">
     <section class="scm">
       <div class="hero">
-        <img src="./images/super-collagen-mist.jpg" alt="">
+        <picture>
+          <source media="(max-width: 640px)" srcset="./images/super-collagen-mist-m.jpg">
+          <img src="./images/super-collagen-mist.jpg" alt="">
+        </picture>
+        <div class="hero-text">
+          <h1>Super Collagen Mist</h1>
+        </div>
       </div>
       <div class="info">
         <div class="info-text">
           <h1>Super Collagen Mist</h1>
-          <p>Researched and developed by our scientists in Japan, Super Collagen Mist delivers the benefits of skin-firming collagen with the most precise and effective method yet: Dipeptide-8. Hydrate before you apply toner during your morning regimen. Set your makeup with its ultra-fine mist. Refresh throughout the day with a gentle, cooling spray.</p>
+          <h6>Researched and developed by our scientists in Japan, Super Collagen Mist delivers the benefits of skin-firming collagen with the most precise and effective method yet: Dipeptide-8. Hydrate before you apply toner during your morning regimen. Set your makeup with its ultra-fine mist. Refresh throughout the day with a gentle, cooling spray.</h6>
           <button>Shop Now</button>
         </div>
       </div>
     </section>
     <section class="science">
-      <div class="supportImg">
+      <!-- <div class="supportImg"> -->
         <div class="supportImg-l">
-          <img src="./images/scm-beakers-l.png" alt="">
+          <picture>
+            <source media="(max-width: 640px)" srcset="./images/scm-beakers-l-m.png">
+            <img src="./images/scm-beakers-l.png" alt="">
+          </picture>
         </div>
+      <!-- </div> -->
+      <div class="placard">
+        <h2>Dipeptide-8</h2>
+        <div class="placardLine"></div>
+        <p>DHC’s research and development labs in Japan were determined to maximize the benefits of conventional collagen. They developed and patented Dipeptide-8, a smaller skin-firming collagen molecule that instantly absorbs to deliver maximum hydration.</p>
       </div>
       <div class="chemicals">
-        <div class="placard">
-          <h2>Dipeptide-8</h2>
-          <div class="placardLine"></div>
-          <p>DHC’s research and development labs in Japan were determined to maximize the benefits of conventional collagen. They developed and patented Dipeptide-8, a smaller skin-firming collagen molecule that instantly absorbs to deliver maximum hydration.</p>
-        </div>
         <h6>Supported by</h6>
         <div class="chemical">
           <h3>Trehalose</h3>
@@ -46,11 +55,16 @@
           <p>A humectant known to prevent moisture loss.</p>
         </div>
       </div>
-      <div class="supportImg">
-        <div class="supportImg-r">
+      <div class="supportImg-r">
+        <picture>
+          <source media="(max-width: 640px)" srcset="./images/scm-beaker-r-m.png">
           <img src="./images/scm-beaker-r.png" alt="">
-        </div>
+        </picture>
       </div>
+
+      <!-- <div class="supportImg">
+
+      </div> -->
     </section>
     <section class="story">
       <div class="title">
@@ -63,7 +77,7 @@
       <div class="traits">
         <div class="trait">
           <h3>Hydrate</h3>
-          <p>Boost your morning regimen with a quick spritz before toner to enjoy skin firming benefits.</p>
+          <p>Boost your morning regimen with a quick spritz before toner to enjoy skin-firming benefits.</p>
         </div>
         <div class="trait">
           <h3>Set</h3>
@@ -76,13 +90,20 @@
         <div class="dropsLine"></div>
       </div>
       <div class="molecules">
-        <img src="./images/scm-molecules.png" alt="">
+        <picture>
+          <source media="(max-width: 640px)" srcset="./images/scm-molecules-m.png">
+          <img src="./images/scm-molecules.png" alt="">
+        </picture>
       </div>
     </section>
     <section class="video-carousel">
       <div class="video-thumbnail">
         <a id="openVideo" href="#">
-          <img src="./images/scm-video.jpg" alt="">
+          <picture>
+            <source media="(max-width: 640px)" srcset="./images/scm-video-m.jpg">
+            <img src="./images/scm-video.jpg" alt="">
+          </picture>
+
         </a>
         <div class="video-text">
           <img class="video-button" src="./images/dhcVideo-play.svg" alt="">
@@ -111,6 +132,9 @@
         <div class="productsLine"></div>
         <p>Learn more about this essential skin-firming ingredient.</p>
         <p class="cta">Explore ></p>
+      </div>
+      <div class="productsImg-mobile">
+        <img src="./images/scm-products-m.png" alt="">
       </div>
     </section>
   </div> <!-- content wrapper -->
