@@ -395,7 +395,7 @@ body {
     font-size: 45px;
   }
   .content-wrapper h2 {
-    font-size: 48px;
+    font-size: 45px;
   }
   .content-wrapper h3 {
     font-size: 39px;
@@ -418,7 +418,6 @@ body {
   }
   .scm {
     background-color: #424649;
-    height: 650px;
   }
   .scm .hero img {
     max-width: 640px;
@@ -432,6 +431,7 @@ body {
   }
   .scm .hero .hero-text h1 {
     display: inline-block;
+    font-size: 36px;
   }
   .scm .info {
     margin-top: -180px;
@@ -453,6 +453,9 @@ body {
     line-height: 1.4;
     margin: 0;
   }
+  .scm .info .info-text .scm-cta {
+    height: 30px;
+  }
   .scm .info .info-text button {
     padding: 10px 16px;
   }
@@ -460,44 +463,56 @@ body {
     flex-direction: column;
   }
   .science .supportImg-l {
-    width: 40%;
-    margin-left: -40px;
+    width: 30%;
+    height: 100px;
+    margin: 0;
+    margin-left: -20px;
     order: 2;
   }
   .science .placard {
-    margin: 50px 20px;
+    margin: 50px 10px -20px 10px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    max-width: 640px;
     order: 1;
   }
   .science .chemicals {
+    margin-top: 0;
+    padding: 0 10px;
+    width: 100%;
     order: 3;
   }
   .science .chemicals .chemical {
-    padding: 0 20px;
+    padding: 0;
   }
   .science .supportImg-r {
     width: 100%;
+    margin: -10px 0 0 0;
+    height: 44px;
     order: 4;
   }
   .science .supportImg-r img {
-    width: 25%;
+    width: 12%;
     float: right;
   }
   .story .title {
     width: 100%;
     text-align: center;
     padding-left: 0;
-    margin-top: -180px;
+    margin-top: 10px;
     order: 1;
   }
   .story .title h2 {
-    width: 80%;
-    padding-left: 10%;
+    margin: 60px auto 20px auto;
+    padding: 0;
   }
   .story .microscope {
     display: none;
   }
   .story .traits {
     text-align: center;
+    padding: 0;
     width: 100%;
     order: 3;
   }
@@ -510,14 +525,24 @@ body {
     order: 2;
   }
   .video-carousel .video-thumbnail .video-text {
-    top: 6px;
+    top: 0;
+    left: 0;
+    font-size: 38px;
+  }
+  .video-carousel .video-thumbnail .video-text img {
+    margin-right: 6px;
+    margin-left: 10px;
   }
   .products {
     background: none;
   }
   .products .info {
     width: 100%;
+    padding: 0;
     text-align: center;
+  }
+  .products .info h2 {
+    margin-top: 0;
   }
   .products .info .productsLine {
     margin: 0 auto 2rem auto;
