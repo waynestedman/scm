@@ -249,19 +249,6 @@ body {
   order: 3;
 }
 
-.science .chemicals {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 40%;
-  margin-top: -340px;
-  -webkit-box-ordinal-group: 5;
-  -ms-flex-order: 4;
-  order: 4;
-}
-
 .science .placard {
   width: 50%;
   height: 400px;
@@ -285,6 +272,19 @@ body {
   width: 50px;
   background-color: #68bebc;
   margin: 0 auto 2rem auto;
+}
+
+.science .chemicals {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 40%;
+  margin-top: -340px;
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
 }
 
 .science h6 {
@@ -421,7 +421,7 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 599px) {
   .content-wrapper h1 {
     font-size: 45px;
   }
@@ -558,14 +558,17 @@ body {
   }
   .story .microscope {
     display: none;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
   }
   .story .traits {
     text-align: center;
     padding: 0;
     width: 100%;
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
-    order: 3;
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
   }
   .story .traits .dropsLine {
     display: none;
@@ -573,9 +576,9 @@ body {
   .story .molecules {
     width: 100%;
     padding-right: 0;
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
   }
   .video-carousel .video-thumbnail .video-text {
     top: 0;
@@ -608,17 +611,118 @@ body {
   }
 }
 
-@media only screen and (min-width: 641px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   .science, .carousel {
     background: url("https://www.dhccare.com/media/wysiwyg/content/product/scm/brushsteel-t.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     max-width: 1024px;
   }
+  .scm .hero {
+    width: 40%;
+  }
+  .scm .hero img {
+    max-width: 830px;
+    width: 415px;
+  }
+  .scm .info {
+    margin-left: 0;
+    background-position: 100% 130%;
+    background-size: 50% 50%;
+  }
+  .scm .info .info-text {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .scm .info .info-text h6 {
+    line-height: 1.4;
+  }
+  .science {
+    padding-bottom: 70px;
+  }
+  .science .supportImg-l {
+    width: 17%;
+    margin-top: 0;
+    height: 270px;
+  }
+  .science .supportImg-r {
+    margin: 0;
+    width: 12%;
+    height: 450px;
+  }
+  .science .placard {
+    width: 70%;
+    height: 326px;
+    padding: 0 20px;
+    margin: 50px 0 50px -24px;
+  }
+  .science .chemicals {
+    margin-top: 0;
+    width: 70%;
+  }
+  .science .chemicals .chemical {
+    padding: 0;
+  }
+  .story .title {
+    width: 66%;
+    padding-left: 8%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .story .microscope {
+    width: 24%;
+    margin: -180px 0 -250px 0;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .story .traits {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .story .traits .trait {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .story .traits .dropsLine {
+    display: none;
+  }
+  .story .molecules {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  .video-carousel .video-thumbnail {
+    width: 90%;
+  }
+  .video-carousel .video-thumbnail .video-text {
+    top: 5px;
+    left: 8%;
+  }
+  .video-carousel .carousel {
+    margin-top: -50px;
+  }
   .products {
+    height: 1051px;
     background: url("../../images/scm-products-t.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+  }
+  .products .info {
+    width: 66%;
+    padding-top: 0;
+    padding-left: 8%;
+  }
+  .products .info p {
+    width: 60%;
+    max-width: 260px;
   }
 }
 

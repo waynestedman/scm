@@ -77,13 +77,6 @@ $scmTeal: #68bebc;
     margin-top: 6px;
     order: 3;
   }
-  .chemicals {
-    flex-direction: column;
-    margin: 0 auto;
-    width: 40%;
-    margin-top: -340px;
-    order: 4;
-  }
   .placard {
     width: 50%;
     height: 400px;
@@ -105,6 +98,13 @@ $scmTeal: #68bebc;
       margin: 0 auto 2rem auto;
     }
   }
+    .chemicals {
+      flex-direction: column;
+      margin: 0 auto;
+      width: 40%;
+      margin-top: -340px;
+      order: 4;
+    }
   h6 {
       margin: 0 auto 20px auto;
       text-align: center;

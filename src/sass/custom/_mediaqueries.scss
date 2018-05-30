@@ -1,4 +1,4 @@
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 599px) {
   .content-wrapper {
       h1 {
         font-size: 45px;
@@ -133,12 +133,13 @@
     }
     .microscope {
       display: none;
+      order: 2;
     }
     .traits {
       text-align: center;
       padding: 0;
       width: 100%;
-      order: 3;
+      order: 4;
 
       .dropsLine {
         display: none;
@@ -147,7 +148,7 @@
     .molecules {
       width: 100%;
       padding-right: 0;
-      order: 2;
+      order: 3;
     }
   }// story
   .video-carousel {
@@ -188,19 +189,126 @@
     }
   }// products
 } // max width 640
-@media only screen and (min-width: 641px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   .science, .carousel {
     background:  url('https://www.dhccare.com/media/wysiwyg/content/product/scm/brushsteel-t.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     max-width: 1024px;
   }
+  .scm {
+    .hero {
+      width: 40%;
+      img {
+        max-width: 830px;
+        width: 415px;
+      }
+    }
+    .info {
+      margin-left: 0;
+      background-position: 100% 130%;
+      background-size: 50% 50%;
+
+      .info-text {
+        padding-right: 20px;
+        padding-left: 20px;
+
+        h6 {
+          line-height: 1.4;
+        }
+      }
+    }
+  } // scm
+  .science {
+    padding-bottom: 70px;
+
+    .supportImg-l {
+      width: 17%;
+      margin-top: 0;
+      height: 270px;
+    }
+    .supportImg-r {
+      margin: 0;
+      width: 12%;
+      height: 450px;
+    }
+    .placard {
+    width: 70%;
+    height: 326px;
+    padding: 0 20px;
+    margin: 50px 0 50px -24px;
+    }
+    .chemicals {
+      margin-top: 0;
+      width: 70%;
+
+      .chemical {
+        padding: 0;
+      }
+    }
+  }
+  .story {
+    .title {
+      width: 66%;
+      padding-left: 8%;
+      // margin-top: 24px;
+      order: 1;
+    }
+    .microscope {
+      width: 24%;
+      margin: -180px 0 -250px 0;
+      order: 2;
+    }
+    .traits {
+      width: 100%;
+      padding-left: 0;
+      text-align: center;
+      order: 4;
+
+      .trait {
+        width: 70%;
+        margin: 0 auto;
+      }
+      .dropsLine {
+        display: none;
+      }
+    }
+    .molecules {
+      width: 80%;
+      margin: 0 auto;
+      order: 3;
+    }
+  } // story
+  .video-carousel {
+    .video-thumbnail {
+      width: 90%;
+
+      .video-text {
+        top: 5px;
+        left: 8%;
+      }
+    }
+    .carousel {
+      margin-top: -50px;
+    }
+  } // video-carousel
   .products {
     // margin: 0;
-    // height: 765px;
+    height: 1051px;
     background: url('../../images/scm-products-t.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+    .info {
+      width: 66%;
+      padding-top: 0;
+      padding-left: 8%;
+
+      p {
+        width: 60%;
+        max-width: 260px;
+      }
+    }
   }
 
 } // min 641 to max 1024
