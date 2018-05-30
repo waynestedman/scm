@@ -555,4 +555,18 @@ body {
   }
 }
 
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .science, .carousel {
+    background: url("https://www.dhccare.com/media/wysiwyg/content/product/scm/brushsteel-t.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 1024px;
+  }
+  .products {
+    background: url("../../images/scm-products-t.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
