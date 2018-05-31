@@ -56,6 +56,7 @@ $scmTeal: #68bebc;
       h6 {
         text-transform: none;
         width: 85%;
+        line-height: 1.4;
       }
     }
   }
@@ -74,7 +75,7 @@ $scmTeal: #68bebc;
     width: 20%;
     float: right;
     margin-left: 40px;
-    margin-top: 6px;
+    margin-top: 20px;
     order: 3;
   }
   .placard {
@@ -129,6 +130,7 @@ $scmTeal: #68bebc;
   .microscope {
     width: 35%;
     margin: -180px 0 -250px 0;
+    height: 800px;
   }
   .traits {
     width: 30%;
@@ -142,18 +144,19 @@ $scmTeal: #68bebc;
     .trait {
       padding: 24px 10px;
     }
-    .dropsLine {
-      height: 70px;
-      width: 570px;
-      margin-left: 22%;
-      border-left: 1px solid $gray700;
-      border-bottom: 1px solid $gray700;
-    }
+    // .dropsLine {
+    //   height: 70px;
+    //   width: 570px;
+    //   margin-left: 22%;
+    //   border-left: 1px solid $gray700;
+    //   border-bottom: 1px solid $gray700;
+    // }
   }
   .molecules {
     z-index: 1;
     width: 70%;
-    padding-right: 8.333333%;
+    padding-left: 40px;
+    margin-bottom: 24px;
   }
 }
 .video-carousel {
@@ -215,13 +218,16 @@ $scmTeal: #68bebc;
   .info {
     padding-top: 8%;
     padding-left: 8.333333%;
-    width: 40%;
+    width: 44%;
 
     .productsLine {
       height: 6px;
       width: 50px;
       background-color: $scmTeal;
       margin-bottom: 2rem;
+    }
+    p {
+      max-width: 294px;
     }
     .cta {
       color: $scmTeal;

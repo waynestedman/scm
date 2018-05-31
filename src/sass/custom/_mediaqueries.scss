@@ -15,7 +15,10 @@
       p {
         font-size: 15px;
       }
-
+      button {
+        font-size: 18px;
+        padding: 10px 20px;
+      }
   }
   .scm, .science, .story, .products {
     flex-direction: column;
@@ -28,17 +31,18 @@
     max-width: 640px;
   }
   .scm {
-    background-color: $gray700;
-    // height: 650px;
-
+    width: 100%;
     .hero {
+      // height: 660px;
+      // max-width: 640px;
+
       img {
         max-width: 640px;
         width: 100%;
       }
       .hero-text {
         position: absolute;
-        top: 10px;
+        top: 20px;
         text-align: center;
         width: 100%;
         h1 {
@@ -48,7 +52,7 @@
       }
     }
     .info {
-      margin-top: -180px;
+      margin-top: -220px;
       margin-left: 0;
       background: none;
       text-align: center;
@@ -63,24 +67,16 @@
         h6 {
           width: 100%;
           font-size: 15px;
-          line-height: 1.4;
-          margin: 0;
+          margin: 0 0 18px 0;
         }
         .scm-cta {
           height: 30px;
-        }
-        button {
-          padding: 10px 16px;
-          // height: 20px;
         }
       }
     }
   } // scm
   .science {
     flex-direction: column;
-    // .supportImg {
-    //   width: 100%;
-    // }
     .supportImg-l {
       width: 30%;
       height: 100px;
@@ -124,6 +120,7 @@
       text-align: center;
       padding-left: 0;
       margin-top: 10px;
+      margin-bottom: 20px;
       order: 1;
 
       h2 {
@@ -141,9 +138,9 @@
       width: 100%;
       order: 4;
 
-      .dropsLine {
-        display: none;
-      }
+      // .dropsLine {
+      //   display: none;
+      // }
     }
     .molecules {
       width: 100%;
@@ -188,7 +185,44 @@
       display: block;
     }
   }// products
-} // max width 640
+} // 365 to 640
+@media only screen and (max-width: 387px) {
+  .content-wrapper {
+    button {
+      margin-top: 0;
+    }
+  }
+  .scm {
+    .info {
+      .info-text {
+        .scm-cta {
+          height: 10px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 363px) {
+  .scm {
+    .hero {
+      height: 688px;
+    }
+    .info {
+      .info-text {
+        padding-top: 2px;
+
+        h6 {
+          margin: 0;
+          font-size: 13px;
+        }
+        .scm-cta {
+          height: 0;
+          margin: 30px 0 16px 0;
+        }
+      }
+    }
+  }
+}
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .science, .carousel {
     background:  url('https://www.dhccare.com/media/wysiwyg/content/product/scm/brushsteel-t.jpg');
@@ -200,8 +234,8 @@
     .hero {
       width: 40%;
       img {
-        max-width: 830px;
-        width: 415px;
+        width: 1024px;
+        // width: 415px;
       }
     }
     .info {
@@ -213,9 +247,9 @@
         padding-right: 20px;
         padding-left: 20px;
 
-        h6 {
-          line-height: 1.4;
-        }
+        // h6 {
+        //   line-height: 1.4;
+        // }
       }
     }
   } // scm
@@ -251,7 +285,6 @@
     .title {
       width: 66%;
       padding-left: 8%;
-      // margin-top: 24px;
       order: 1;
     }
     .microscope {
@@ -269,9 +302,9 @@
         width: 70%;
         margin: 0 auto;
       }
-      .dropsLine {
-        display: none;
-      }
+      // .dropsLine {
+      //   display: none;
+      // }
     }
     .molecules {
       width: 80%;
@@ -290,10 +323,14 @@
     }
     .carousel {
       margin-top: -50px;
+
+      h2 {
+        width: 500px;
+        margin: 0 auto;
+      }
     }
   } // video-carousel
   .products {
-    // margin: 0;
     height: 1051px;
     background: url('../../images/scm-products-t.png');
     background-repeat: no-repeat;

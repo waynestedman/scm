@@ -220,6 +220,7 @@ body {
 .scm .info .info-text h6 {
   text-transform: none;
   width: 85%;
+  line-height: 1.4;
 }
 
 .science {
@@ -243,7 +244,7 @@ body {
   width: 20%;
   float: right;
   margin-left: 40px;
-  margin-top: 6px;
+  margin-top: 20px;
   -webkit-box-ordinal-group: 4;
   -ms-flex-order: 3;
   order: 3;
@@ -314,6 +315,7 @@ body {
 .story .microscope {
   width: 35%;
   margin: -180px 0 -250px 0;
+  height: 800px;
 }
 
 .story .traits {
@@ -334,18 +336,11 @@ body {
   padding: 24px 10px;
 }
 
-.story .traits .dropsLine {
-  height: 70px;
-  width: 570px;
-  margin-left: 22%;
-  border-left: 1px solid #424649;
-  border-bottom: 1px solid #424649;
-}
-
 .story .molecules {
   z-index: 1;
   width: 70%;
-  padding-right: 8.333333%;
+  padding-left: 40px;
+  margin-bottom: 24px;
 }
 
 .video-carousel .video-thumbnail {
@@ -400,7 +395,7 @@ body {
 .products .info {
   padding-top: 8%;
   padding-left: 8.333333%;
-  width: 40%;
+  width: 44%;
 }
 
 .products .info .productsLine {
@@ -408,6 +403,10 @@ body {
   width: 50px;
   background-color: #68bebc;
   margin-bottom: 2rem;
+}
+
+.products .info p {
+  max-width: 294px;
 }
 
 .products .info .cta {
@@ -437,6 +436,10 @@ body {
   .content-wrapper p {
     font-size: 15px;
   }
+  .content-wrapper button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
   .scm, .science, .story, .products {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -453,7 +456,7 @@ body {
     max-width: 640px;
   }
   .scm {
-    background-color: #424649;
+    width: 100%;
   }
   .scm .hero img {
     max-width: 640px;
@@ -461,7 +464,7 @@ body {
   }
   .scm .hero .hero-text {
     position: absolute;
-    top: 10px;
+    top: 20px;
     text-align: center;
     width: 100%;
   }
@@ -470,7 +473,7 @@ body {
     font-size: 36px;
   }
   .scm .info {
-    margin-top: -180px;
+    margin-top: -220px;
     margin-left: 0;
     background: none;
     text-align: center;
@@ -486,14 +489,10 @@ body {
   .scm .info .info-text h6 {
     width: 100%;
     font-size: 15px;
-    line-height: 1.4;
-    margin: 0;
+    margin: 0 0 18px 0;
   }
   .scm .info .info-text .scm-cta {
     height: 30px;
-  }
-  .scm .info .info-text button {
-    padding: 10px 16px;
   }
   .science {
     -webkit-box-orient: vertical;
@@ -548,6 +547,7 @@ body {
     text-align: center;
     padding-left: 0;
     margin-top: 10px;
+    margin-bottom: 20px;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
@@ -569,9 +569,6 @@ body {
     -webkit-box-ordinal-group: 5;
     -ms-flex-order: 4;
     order: 4;
-  }
-  .story .traits .dropsLine {
-    display: none;
   }
   .story .molecules {
     width: 100%;
@@ -611,6 +608,32 @@ body {
   }
 }
 
+@media only screen and (max-width: 387px) {
+  .content-wrapper button {
+    margin-top: 0;
+  }
+  .scm .info .info-text .scm-cta {
+    height: 10px;
+  }
+}
+
+@media only screen and (max-width: 363px) {
+  .scm .hero {
+    height: 688px;
+  }
+  .scm .info .info-text {
+    padding-top: 2px;
+  }
+  .scm .info .info-text h6 {
+    margin: 0;
+    font-size: 13px;
+  }
+  .scm .info .info-text .scm-cta {
+    height: 0;
+    margin: 30px 0 16px 0;
+  }
+}
+
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .science, .carousel {
     background: url("https://www.dhccare.com/media/wysiwyg/content/product/scm/brushsteel-t.jpg");
@@ -622,8 +645,7 @@ body {
     width: 40%;
   }
   .scm .hero img {
-    max-width: 830px;
-    width: 415px;
+    width: 1024px;
   }
   .scm .info {
     margin-left: 0;
@@ -633,9 +655,6 @@ body {
   .scm .info .info-text {
     padding-right: 20px;
     padding-left: 20px;
-  }
-  .scm .info .info-text h6 {
-    line-height: 1.4;
   }
   .science {
     padding-bottom: 70px;
@@ -689,9 +708,6 @@ body {
     width: 70%;
     margin: 0 auto;
   }
-  .story .traits .dropsLine {
-    display: none;
-  }
   .story .molecules {
     width: 80%;
     margin: 0 auto;
@@ -708,6 +724,10 @@ body {
   }
   .video-carousel .carousel {
     margin-top: -50px;
+  }
+  .video-carousel .carousel h2 {
+    width: 500px;
+    margin: 0 auto;
   }
   .products {
     height: 1051px;
