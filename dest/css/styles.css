@@ -27,6 +27,10 @@ body {
   padding-bottom: 0;
 }
 
+.modal-popup .modal-footer {
+  display: none;
+}
+
 .content-wrapper {
   font-weight: 300;
   max-width: 1280px;
@@ -127,7 +131,6 @@ body {
 }
 
 .content-wrapper button {
-  color: #212121;
   text-transform: uppercase;
   cursor: pointer;
   background: none;
@@ -145,7 +148,6 @@ body {
 }
 
 .content-wrapper .slick-arrow {
-  color: #424649;
   background: none;
 }
 
@@ -179,18 +181,27 @@ body {
   margin-bottom: 20px;
 }
 
-.content-wrapper button {
+.content-wrapper .scm-btn {
+  position: absolute;
   background: #68bebc;
   border: 1px solid #68bebc;
   color: #fff;
   padding: 10px 20px;
   margin-top: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.content-wrapper button:hover {
+.content-wrapper .scm-btn:hover {
   background: #afdddc;
   border: 1px solid #68bebc;
   color: #fff;
+}
+
+.content-wrapper .slick-next, .content-wrapper .slick-arrow {
+  border: none;
 }
 
 .scm .hero img {
@@ -221,6 +232,10 @@ body {
   text-transform: none;
   width: 85%;
   line-height: 1.4;
+}
+
+.scm .info .info-text a {
+  margin-top: 40px;
 }
 
 .science {
@@ -359,6 +374,8 @@ body {
 .video-carousel .video-thumbnail .video-text img {
   display: inline-block;
   margin-right: 22px;
+  width: 40px;
+  vertical-align: middle;
 }
 
 .video-carousel .video-thumbnail .video-text h4 {
@@ -380,7 +397,7 @@ body {
   text-align: center;
 }
 
-.video-carousel .carousel .widget.block-products-list .add-button {
+.video-carousel .carousel .widget .block-products-list .add-button {
   font-weight: 400;
 }
 
@@ -409,7 +426,7 @@ body {
   max-width: 294px;
 }
 
-.products .info .cta {
+.products .info .cta a {
   color: #68bebc;
   text-transform: uppercase;
   margin-top: 20px;
@@ -421,6 +438,9 @@ body {
 }
 
 @media only screen and (max-width: 599px) {
+  .cms-page-view .column.main p {
+    margin: 0 auto 10px auto;
+  }
   .content-wrapper h1 {
     font-size: 45px;
   }
@@ -430,15 +450,21 @@ body {
   .content-wrapper h3 {
     font-size: 39px;
   }
+  .content-wrapper h4 {
+    font-size: 30px;
+  }
   .content-wrapper h6 {
     font-size: 18px;
   }
   .content-wrapper p {
     font-size: 15px;
   }
-  .content-wrapper button {
+  .content-wrapper a {
+    color: #68bebc;
+  }
+  .content-wrapper .scm-btn {
     font-size: 18px;
-    padding: 10px 20px;
+    position: relative;
   }
   .scm, .science, .story, .products {
     -webkit-box-orient: vertical;
@@ -546,8 +572,7 @@ body {
     width: 100%;
     text-align: center;
     padding-left: 0;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin: 10px auto 20px auto;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
@@ -555,6 +580,7 @@ body {
   .story .title h2 {
     margin: 60px auto 20px auto;
     padding: 0;
+    width: 86%;
   }
   .story .microscope {
     display: none;
@@ -609,7 +635,7 @@ body {
 }
 
 @media only screen and (max-width: 387px) {
-  .content-wrapper button {
+  .content-wrapper .scm-btn {
     margin-top: 0;
   }
   .scm .info .info-text .scm-cta {
@@ -635,6 +661,9 @@ body {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .content-wrapper a {
+    color: #68bebc;
+  }
   .science, .carousel {
     background: url("https://www.dhccare.com/media/wysiwyg/content/product/scm/brushsteel-t.jpg");
     background-repeat: no-repeat;

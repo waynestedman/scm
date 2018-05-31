@@ -16,18 +16,26 @@ $scmTeal: #68bebc;
     font-size: 60px;
     margin-bottom: 20px;
   }
-  button {
+  .scm-btn {
+    position: absolute;
     background: $scmTeal;
     border: 1px solid $scmTeal;
     color: #fff;
     padding: 10px 20px;
     margin-top: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
 
     &:hover {
       background: lighten($scmTeal, 20%);
       border: 1px solid $scmTeal;
       color: #fff;
     }
+  }
+  .slick-next, .slick-arrow {
+    border: none;
   }
 }
 
@@ -57,6 +65,9 @@ $scmTeal: #68bebc;
         text-transform: none;
         width: 85%;
         line-height: 1.4;
+      }
+      a {
+        margin-top: 40px;
       }
     }
   }
@@ -173,6 +184,8 @@ $scmTeal: #68bebc;
       img {
         display: inline-block;
         margin-right: 22px;
+        width: 40px;
+        vertical-align: middle;
       }
       h4 {
         display: inline-block;
@@ -192,7 +205,7 @@ $scmTeal: #68bebc;
     padding: 100px 0;
     text-align: center;
 
-    .widget.block-products-list .add-button {
+    .widget .block-products-list .add-button {
       font-weight: 400;
       // background: $blue700;
       // border: 1px solid $blue700;
@@ -229,7 +242,7 @@ $scmTeal: #68bebc;
     p {
       max-width: 294px;
     }
-    .cta {
+    .cta a {
       color: $scmTeal;
       text-transform: uppercase;
       margin-top: 20px;

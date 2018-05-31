@@ -10,6 +10,9 @@ body {
 .columns .column.main {
   padding-bottom: 0;
 }
+.modal-popup .modal-footer {
+  display: none;
+}
 .content-wrapper {
   font-weight: 300;
   max-width: 1280px;
@@ -93,7 +96,7 @@ body {
     cursor: pointer;
   }
   button {
-    color: $gray900;
+    // color: $gray900;
     text-transform: uppercase;
     cursor: pointer;
     background: none;
@@ -109,7 +112,7 @@ body {
     }
   }
   .slick-arrow {
-    color: $gray700;
+    // color: $gray700;
     background: none;
   }
   .linkCTA {

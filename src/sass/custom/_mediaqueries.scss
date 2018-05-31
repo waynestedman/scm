@@ -1,4 +1,7 @@
 @media only screen and (max-width: 599px) {
+  .cms-page-view .column.main p {
+    margin: 0 auto 10px auto;
+  }
   .content-wrapper {
       h1 {
         font-size: 45px;
@@ -9,15 +12,21 @@
       h3 {
         font-size: 39px;
       }
+      h4 {
+        font-size: 30px;
+      }
       h6 {
         font-size: 18px;
       }
       p {
         font-size: 15px;
       }
-      button {
+      a {
+        color: $scmTeal;
+      }
+      .scm-btn {
         font-size: 18px;
-        padding: 10px 20px;
+        position: relative;
       }
   }
   .scm, .science, .story, .products {
@@ -119,13 +128,13 @@
       width: 100%;
       text-align: center;
       padding-left: 0;
-      margin-top: 10px;
-      margin-bottom: 20px;
+      margin: 10px auto 20px auto;
       order: 1;
 
       h2 {
         margin: 60px auto 20px auto;
         padding: 0;
+        width: 86%;
       }
     }
     .microscope {
@@ -188,7 +197,7 @@
 } // 365 to 640
 @media only screen and (max-width: 387px) {
   .content-wrapper {
-    button {
+    .scm-btn {
       margin-top: 0;
     }
   }
@@ -224,6 +233,9 @@
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .content-wrapper a {
+    color: $scmTeal;
+  }
   .science, .carousel {
     background:  url('https://www.dhccare.com/media/wysiwyg/content/product/scm/brushsteel-t.jpg');
     background-repeat: no-repeat;

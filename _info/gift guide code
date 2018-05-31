@@ -1,0 +1,382 @@
+<p>
+<script type="text/javascript" xml="space">// <![CDATA[
+//
+//
+//
+//
+//
+
+
+require([
+        'jquery',
+        'slick'
+    ], function ($) {
+        jQuery(document).ready(function () {
+            jQuery(".widget-product-grid").slick({
+                dots: false,
+                infinite: true,
+                speed: 600,
+                slidesToShow: 4,
+                slidesToScroll: 3,
+                responsive: [
+                    {
+                        breakpoint: 1280,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    });
+
+//
+//
+//
+//
+//
+// ]]></script>
+</p>
+<style xml="space"><!--
+.content-wrapper {
+  max-width: 1280px;
+  font-weight: 300;
+  font-size: 17.402px;
+  margin: 0 auto;
+  background: url("https://www.dhccare.com/media/wysiwyg/content/os_content/gift-guide-header-background.jpg") no-repeat right top;
+}
+.content-wrapper a {
+  text-decoration: none;
+  color: #212121;
+  text-transform: none;
+  cursor: pointer;
+}
+.dhcBlue {
+  color: #00388D;
+  font-weight: 400;
+}
+.content-wrapper h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.content-wrapper .column p {
+  max-width: 440px;
+  line-height: 1.45;
+  margin-top: 4px;
+}
+.cms-page-view .column.main img {
+  margin: 0 auto 20px auto;
+}
+.cms-page-view .column.main p {
+  margin: 4px auto 10px auto;
+}
+.row {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+#row1 {
+  display: flex;
+  height: 650px;
+  justify-content: space-between;
+}
+.flowers-left {
+  float:left;
+}
+.header-title {
+  margin: 40px 0 0 -20px;
+}
+.header-copy {
+  float: right;
+  text-align: left;
+  letter-spacing: 1.1px;
+  max-width: 440px;
+  margin: 170px 40px 0 40px;
+}
+#row1 h4 {
+  font-size: 24px;
+  line-height: 1.45;
+  font-weight: 300;
+}
+#row1 p {
+  line-height: 1.45;
+  font-size: 18px;
+}
+.flowers-right {
+  float: right;
+  margin-top: 100px;
+}
+#row2 {
+  margin-top: -240px;
+}
+#row2, #row4 {
+  margin-left: auto;
+  margin-right: auto;
+}
+#row3 {
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
+.product-item-link {
+  text-transform: none;
+}
+.widget.block-products-list .product-item-name {
+   height: 52px;
+}
+.price-wrapper {
+  font-weight: 400;
+}
+#row4 {
+  margin-bottom: 20px;
+}
+#row5 {
+   background: url("https://www.dhccare.com/media/wysiwyg/content/os_content/gift-guide-gift-card-background.png") repeat left top;
+}
+#row5 img {
+  margin: 0 auto;
+  max-width: 692px;
+}
+.giftCard-text {
+  max-width: 588px;
+  max-height: 400px;
+  padding: 60px 0 0 80px;
+  text-align: left;
+}
+#row5 h2 {
+  font-size: 45px;
+  margin: 3.8rem auto 2rem auto;
+  text-align: left;
+}
+#row5 h4 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.45;
+  margin: 0 auto 2rem auto;
+  text-align: left;
+}
+#row5 .no-break {
+    display: none;
+}
+.giftCard-text a {
+  font-size: 24px;
+  line-height: 1.45;
+  margin: 0 auto 2rem auto;
+  color: #5c6bc0;
+  text-transform: uppercase;
+}
+#row5 a {
+  font-weight: 400;
+}
+.column {
+  flex-direction: column;
+  text-align: center;
+}
+.block-title {
+  text-align: center;
+  margin: 0;
+}
+.widget .block-title>strong {
+  font-size: 4rem;
+  line-height: 1.5rem;
+}
+.block.widget .products-grid .product-item {
+  margin: 0;
+}
+.widget.block-products-list .add-button:hover {
+  background: #00388D;
+  border: 1px solid #00388D;
+  color: #fff;
+}
+@media only all and (max-width: 1244px) and (min-width: 867px) {
+  .content-wrapper .column {
+    max-width: 284px;
+  }
+  .content-wrapper .row {
+    justify-content: space-around;
+  }
+  .header-copy {
+    max-width: 400px;
+    margin-top: 114px;
+  }
+  #row2 {
+    margin-top: -300px;
+  }
+ .cms-page-view .column.main img {
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  .giftCard-text {
+    padding: 30px 0 0 40px;
+  }
+  #row5 img {
+    max-width: 484px;
+    max-height: 280px;
+  }
+}
+@media only all and (max-width: 866px) {
+  .column {
+    margin-top: 0;
+  }
+  .content-wrapper {
+    max-width: 866px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  .content-wrapper img {
+    width: 90%;
+  }
+ .cms-page-view .column.main img {
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  #row2, #row3, #row4, #row5 {
+    padding: 0 6px;
+    flex-direction: column;
+  }
+  #row1 {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .flowers-left {
+    order: 1;
+    width: 72px;
+  }
+  .header-title {
+    order: 2;
+    width: 100%;
+    margin: 20px 0 0 -100px;
+  }
+  .flowers-right {
+    display: none;
+  }
+  .header-copy {
+    order: 4;
+    margin: 0 auto 110px auto;
+    padding-left: 8px;
+    text-align: center;
+  }
+  .header-title img {
+    width: 75%;
+    height: 75%;
+    float: right;
+  }
+  .flowers-right {
+    width: 144px;
+    height: 265px;
+  }
+  #row1 h4 {
+    margin: 0;
+  }
+  .content-wrapper .column {
+    margin: 44px auto 20px auto;
+  }
+  .content-wrapper h3 {
+    margin-top: 8px;
+  }
+  #row2 {
+    margin-top: -140px;
+  }
+  #row5 {
+    display: flex;
+    flex-direction: column;
+    max-height: 480px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+  #row5 img {
+    order: 1;
+    max-width: 484px;
+  }
+  .giftCard-text {
+    order: 2;
+    padding: 0 12px;
+    margin: -20px auto 0 auto;
+    text-align: center;
+    font-size: 30px;
+  }
+  #row5 h2 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+    text-align: center;
+  }
+  #row5 h4, #row5 a {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 0 8px;
+  }
+  #row5 h4 {
+    display: none;
+  }
+  #row5 .no-break {
+    display: inherit;
+  }
+}
+@media only all and (max-width: 1050px) and (min-width: 767px) {
+  .widget.block-products-list .product-item-name {
+    height: 80px;
+  }
+}
+--></style>
+<div class="content-wrapper"><section id="row1">
+<div class="flowers-left"><img src="https://www.dhccare.com/media/wysiwyg/content/os_content/gift-guide-flower_01.png" alt="" /></div>
+<div class="header-title"><img src="https://www.dhccare.com/media/wysiwyg/content/os_content/gift-guide-header-title.png" alt="" /></div>
+<div class="header-copy">
+<h4>Discover the gift of skincare</h4>
+<p>Let us guide you in selecting the perfect gift for the women in your life.</p>
+</div>
+<div class="flowers-right"><img src="https://www.dhccare.com/media/wysiwyg/content/os_content/gift-guide-flower_02.png" alt="" /></div>
+</section><section id="row2" class="row">
+<div class="column"><a href="https://www.dhccare.com/gifts/gift-sets.html"> <img src="https://www.dhccare.com/media/wysiwyg/content/os_content/gift-guide-Gift-Set.jpg" alt="Gift Set" /> </a>
+<h3>Gift Sets</h3>
+<p>Give the gift of <span class="dhcBlue">Ritual &amp; Luxury</span></p>
+</div>
+<div class="column"><a href="https://www.dhccare.com/gifts/gift-1.html"> <img src="https://www.dhccare.com/media/wysiwyg/content/os_content/gift-guide-The-Athlete.jpg" alt="The Athlete" /> </a>
+<h3>The Athlete</h3>
+<p>It&rsquo;s the only way to be &mdash; <span class="dhcBlue">Sporty Spice</span></p>
+</div>
+<div class="column"><a href="https://www.dhccare.com/gifts/gift-2.html"> <img src="https://www.dhccare.com/media/wysiwyg/content/os_content/gift-guide-The-Power-Mom.jpg" alt="The Power Mom" /> </a>
+<h3>The Power Mom</h3>
+<p>She is <span class="dhcBlue">Wonder Woman</span></p>
+</div>
+</section><section id="row3" class="max-width-container">
+
+{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" title="Your Best Friend" show_pager="0" products_count="30" template="product/widget/content/grid.phtml" cache_lifetime="1" conditions_encoded="a:2:[i:1;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Combine`;s:10:`aggregator`;s:3:`all`;s:5:`value`;s:1:`1`;s:9:`new_child`;s:0:``;]s:4:`1--1`;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Product`;s:9:`attribute`;s:12:`category_ids`;s:8:`operator`;s:2:`==`;s:5:`value`;s:2:`29`;]]"}}
+
+</section><section id="row4" class="row">
+<div class="column"><a href="https://www.dhccare.com/gifts/gift-3.html"> <img src="https://www.dhccare.com/media/wysiwyg/content/os_content/gift-guide-The-Glamourista.jpg" alt="The Glamourista" /> </a>
+<h3>The Glamourista</h3>
+<p>I love it! <span class="dhcBlue">She&rsquo;s so Extra</span></p>
+</div>
+<div class="column"><a href="https://www.dhccare.com/gifts/gift-4.html"> <img src="https://www.dhccare.com/media/wysiwyg/content/os_content/gift-guide-The-Jetsetter.jpg" alt="The Jetsetter" /> </a>
+<h3>The Jet Setter</h3>
+<p>Did you say, <span class="dhcBlue">&ldquo;Meet me in Paris?&rdquo;</span></p>
+</div>
+<div class="column"><a href="https://www.dhccare.com/gifts/gift-6.html"> <img src="https://www.dhccare.com/media/wysiwyg/content/os_content/gift-guide-The-Minimalist.jpg" alt="The Minimalist" /> </a>
+<h3>The Minimalist</h3>
+<p>She thinks <span class="dhcBlue">Less is More</span></p>
+</div>
+</section><section id="row5" class="row">
+<div class="giftCard-text">
+<h2>eGift Card</h2>
+<h4>She&rsquo;ll love the instant indulgence<br />of our eGift Card.</h4>
+<h4 class="no-break">She&rsquo;ll love the instant indulgence of our eGift Card.</h4>
+<a href="https://www.dhccare.com/electronic-gift-card.html">Buy Today &gt;</a></div>
+<img src="https://www.dhccare.com/media/wysiwyg/content/os_content/gift-guide-gift-card.png" alt="DHC Electronic Gift Card" /></section></div>
