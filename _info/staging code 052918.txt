@@ -1,0 +1,519 @@
+<style xml="space"><!--
+.cms-page-view .column.main img {
+  margin: 0;
+}
+.columns .column.main {
+  padding-bottom: 0;
+}
+.content-wrapper {
+  font-weight: 300;
+  max-width: 1280px;
+  margin: 0 auto;
+  line-height: 1.4;
+  background: #fff;
+}
+
+.content-wrapper .row {
+  margin: 0;
+}
+
+.content-wrapper .column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content-wrapper .block-title {
+  text-align: center;
+  margin: 0;
+}
+
+.content-wrapper .widget .block-title > strong {
+  font-size: 4rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+.content-wrapper .block.widget .products-grid .product-item {
+  margin: 0;
+}
+
+.content-wrapper .widget.block-products-list .add-button {
+  font-weight: 400;
+}
+
+.content-wrapper .widget.block-products-list .add-button:hover {
+  background: #00388D;
+  border: 1px solid #00388D;
+  color: #fff;
+}
+.content-wrapper .product-item-link {
+  text-transform: none;
+}
+
+.content-wrapper .widget.block-products-list .product-item-name {
+  height: 52px;
+}
+
+.content-wrapper .price-wrapper {
+  font-weight: 400;
+}
+.content-wrapper h1 {
+  font-size: 70px;
+}
+
+.content-wrapper h2 {
+  font-size: 55px;
+}
+
+.content-wrapper h3 {
+  font-size: 40px;
+}
+
+.content-wrapper h4 {
+  font-size: 33px;
+  font-weight: 300;
+}
+
+.content-wrapper h5 {
+  font-size: 30px;
+  margin-top: 2.6rem;
+  margin-bottom: .4rem;
+}
+
+.content-wrapper h6 {
+  font-size: 17px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.content-wrapper p {
+  font-size: 18px;
+}
+
+.content-wrapper .weight400 {
+  font-weight: 400;
+}
+
+.content-wrapper a {
+  text-decoration: none;
+  color: #212121;
+  cursor: pointer;
+}
+
+.content-wrapper button {
+  color: #212121;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+}
+
+.content-wrapper .slick-arrow {
+  color: #424649;
+  background: none;
+}
+
+.content-wrapper .linkCTA {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.scm, .science, .story, .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.science, .carousel {
+  background: url("https://www.dhccare.com/media/wysiwyg/content/product/scm/brushsteel.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 1280px;
+}
+
+.content-wrapper h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.content-wrapper button {
+  background: #68bebc;
+  border: 1px solid #68bebc;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.content-wrapper button:hover {
+  background: #afdddc;
+  border: 1px solid #68bebc;
+  color: #fff;
+}
+
+.scm .hero img {
+  width: 992px;
+  max-width: none;
+}
+
+.scm .info {
+  margin-left: -450px;
+  background: url("https://www.dhccare.com/media/wysiwyg/content/product/scm/molecule-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 110%;
+  background-size: 40% 40%;
+}
+
+.scm .info .info-text {
+  padding-top: 80px;
+  padding-right: 60px;
+  padding-bottom: 80px;
+  padding-left: 40px;
+}
+
+.scm .info .info-text p {
+  width: 85%;
+}
+
+.science {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.science .supportImg {
+  width: 70%;
+}
+
+.science .supportImg .supportImg-l {
+  margin-top: 80px;
+}
+
+.science .supportImg .supportImg-r {
+  width: 60%;
+  float: right;
+  margin-left: 40px;
+  margin-top: 6px;
+}
+
+.science .chemicals {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.science .placard {
+  text-align: center;
+  padding: 30px 80px;
+  margin: 50px auto;
+  background-color: rgba(226, 251, 250, 0.15);
+  border-top: 2px solid #3a8684;
+  border-right: 1px solid #68bebc;
+  border-bottom: 3px solid #419896;
+  border-left: 1px solid #68bebc;
+  -webkit-box-shadow: -4px 8px 20px 0px rgba(27, 63, 62, 0.2);
+  box-shadow: -4px 8px 20px 0px rgba(27, 63, 62, 0.2);
+}
+
+.science .placard .placardLine {
+  height: 6px;
+  width: 50px;
+  background-color: #68bebc;
+  margin: 0 auto 2rem auto;
+}
+
+.science h6 {
+  margin: 0 auto 20px auto;
+  text-align: center;
+  color: #68bebc;
+  font-weight: 600;
+}
+
+.science .chemical {
+  padding: 0 60px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.story {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.story .title {
+  width: 50%;
+  padding-left: 10%;
+  margin-top: 24px;
+}
+
+.story .microscope {
+  width: 35%;
+  margin: -180px 0 -250px 0;
+}
+
+.story .traits {
+  width: 30%;
+  padding-left: 8.333333%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 99;
+}
+
+.story .traits h3 {
+  color: #68bebc;
+}
+
+.story .traits .trait {
+  padding: 24px 10px;
+}
+
+.story .traits .dropsLine {
+  height: 70px;
+  width: 570px;
+  margin-left: 22%;
+  border-left: 1px solid #424649;
+  border-bottom: 1px solid #424649;
+}
+
+.story .molecules {
+  z-index: 1;
+  width: 70%;
+  padding-right: 8.333333%;
+}
+
+.video-carousel .video-thumbnail {
+  max-width: 1068px;
+  max-height: 150px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.video-carousel .video-thumbnail .video-text {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+}
+.video-carousel .video-thumbnail .video-text img {
+  display: inline-block;
+  margin-right: 22px;
+}
+.video-carousel .video-thumbnail .video-text h4 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.video-carousel .video-thumbnail .video-button {
+  margin-right: 20px;
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
+}
+.video-carousel .carousel {
+  margin-top: -75px;
+  padding: 100px 0;
+  text-align: center;
+}
+.video-carousel .carousel .widget.block-products-list .add-button {
+  font-weight: 400;
+}
+
+.products {
+  margin: 0;
+  height: 765px;
+  background: url("https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-products.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.products .info {
+  padding-top: 8%;
+  padding-left: 8.333333%;
+  width: 40%;
+}
+
+.products .info .productsLine {
+  height: 6px;
+  width: 50px;
+  background-color: #68bebc;
+  margin-bottom: 2rem;
+}
+
+.products .info .cta {
+  color: #68bebc;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+--></style>
+<script type="text/javascript" xml="space">// <![CDATA[
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+
+require([
+  'jquery',
+  'slick',
+  'Magento_Ui/js/modal/modal'
+  ], function ($) {
+    $(document).ready(function () {
+      var videoModal = $('#video').modal();
+      $(".productCarousel").slick({
+        dots: false,
+        speed: 600,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+          {
+            breakpoint: 1280,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+      $('#openVideo').on('click', function(e) {
+        e.preventDefault();
+        videoModal.modal('openModal');
+       $("#simple-iframe").attr('src', "https://fast.wistia.net/embed/iframe/ozmj3dq5tp?videoFoam=true&autoplay=1");
+      });
+    });
+  });
+
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// ]]></script>
+<div class="content-wrapper"><section class="scm">
+<div class="hero"><img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/super-collagen-mist.jpg" alt="" /></div>
+<div class="info">
+<div class="info-text">
+<h1>Super Collagen Mist</h1>
+<p>Researched and developed by our scientists in Japan, Super Collagen Mist delivers the benefits of skin-firming collagen with the most precise and effective method yet: Dipeptide-8. Hydrate before you apply toner during your morning regimen. Set your makeup with its ultra-fine mist. Refresh throughout the day with a gentle, cooling spray.</p>
+<button>Shop Now</button></div>
+</div>
+</section><section class="science">
+<div class="supportImg">
+<div class="supportImg-l"><img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-beakers-l.png" alt="" /></div>
+</div>
+<div class="chemicals">
+<div class="placard">
+<h2>Dipeptide-8</h2>
+<div class="placardLine"></div>
+<p>DHC&rsquo;s research and development labs in Japan were determined to maximize the benefits of conventional collagen. They developed and patented Dipeptide-8, a smaller skin-firming collagen molecule that instantly absorbs to deliver maximum hydration.</p>
+</div>
+<h6>Supported by</h6>
+<div class="chemical">
+<h3>Trehalose</h3>
+<p>Promoting moisture retention, trehalose helps desert plants survive long periods without water.</p>
+</div>
+<div class="chemical">
+<h3>Glycerin</h3>
+<p>A humectant known to prevent moisture loss.</p>
+</div>
+</div>
+<div class="supportImg">
+<div class="supportImg-r"><img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-beaker-r.png" alt="" /></div>
+</div>
+</section><section class="story">
+<div class="title">
+<h2>Unlock the Power of Super Collagen Mist</h2>
+<button>Shop Now</button></div>
+<div class="microscope"><img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/dhc-microscope.png" alt="" /></div>
+<div class="traits">
+<div class="trait">
+<h3>Hydrate</h3>
+<p>Boost your morning regimen with a quick spritz before toner to enjoy skin firming benefits.</p>
+</div>
+<div class="trait">
+<h3>Set</h3>
+<p>Complete your look with this finishing touch.</p>
+</div>
+<div class="trait">
+<h3>Refresh</h3>
+<p>Carry with you to revive your skin anytime, anywhere.</p>
+</div>
+<div class="dropsLine"></div>
+</div>
+<div class="molecules"><img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-molecules.png" alt="" /></div>
+</section><section class="video-carousel">
+<div class="video-thumbnail"><a href="#"> <img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-video.jpg" alt="" /></a>
+<div class="video-text"><a href="#"> <img class="video-button" src="https://www.dhccare.com/media/wysiwyg/content/product/scm/dhcVideo-play.svg" alt="" /></a>
+<h4>Video Headline</h4>
+</div>
+</div>
+<div id="video">
+<div class="wistia_responsive_padding" style="padding: 56.25% 0 0 0; position: relative;">
+<div class="wistia_responsive_wrapper" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;"><iframe title="Wistia video player" src="https://fast.wistia.net/embed/iframe/ozmj3dq5tp?videoFoam=true" name="wistia_embed" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>
+</div>
+</div>
+<div class="carousel">
+<h2>Explore the Power of Collagen</h2>
+<div class="max-width-container">{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="4" template="product/widget/content/grid.phtml" conditions_encoded="a:2:[i:1;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Combine`;s:10:`aggregator`;s:3:`all`;s:5:`value`;s:1:`1`;s:9:`new_child`;s:0:``;]s:4:`1--1`;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Product`;s:9:`attribute`;s:12:`category_ids`;s:8:`operator`;s:2:`==`;s:5:`value`;s:2:`63`;]]"}}</div>
+</div>
+</section><section class="products">
+<div class="info">
+<h2>Deliver Collagen to Your Skin</h2>
+<div class="productsLine"></div>
+<p>Learn more about this essential skin-firming ingredient.</p>
+<p class="cta">Explore &gt;</p>
+</div>
+</section></div>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async="" type="text/javascript" xml="space">// <![CDATA[
+// 
+// 
+// 
+
+
+// 
+// 
+// 
+// ]]></script>
