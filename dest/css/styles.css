@@ -67,11 +67,14 @@ body {
 
 .content-wrapper .widget.block-products-list .add-button {
   font-weight: 400;
+  background: none;
+  border: 1px solid #68bebc;
+  color: #68bebc;
 }
 
 .content-wrapper .widget.block-products-list .add-button:hover {
-  background: #00388D;
-  border: 1px solid #00388D;
+  background: #afdddc;
+  border: 1px solid #68bebc;
   color: #fff;
 }
 
