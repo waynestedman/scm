@@ -5,22 +5,20 @@ require([
   'slick',
   'Magento_Ui/js/modal/modal'
   ], function ($) {
-    $(document).ready(function () {
-      var videoModal = $('#video').modal();
-      $(".productCarousel").slick({
+    jQuery(document).ready(function () {
+       jQuery(".widget-product-grid").slick({
         dots: false,
-        speed: 600,
+        arrows: true,
+        speed: 1000,
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         responsive: [
           {
-            breakpoint: 1280,
+            breakpoint: 1025,
             settings: {
               slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: false
+              slidesToScroll: 3
             }
           },
           {
@@ -39,11 +37,12 @@ require([
           }
         ]
       });
-      $('#openVideo').on('click', function(e) {
+     var videoModal = jQuery('#video').modal();
+     jQuery('#openVideo').on('click', function(e) {
         e.preventDefault();
         videoModal.modal('openModal');
-       $("#simple-iframe").attr('src', "https://fast.wistia.net/embed/iframe/ozmj3dq5tp?videoFoam=true&autoplay=1");
+       jQuery("#simple-iframe").attr('src', "https://fast.wistia.net/embed/iframe/ozmj3dq5tp?videoFoam=true&autoplay=1");
       });
     });
   });
-]]></script>
+ ]]></script>
