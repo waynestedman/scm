@@ -1,24 +1,50 @@
-/* Focus
-$focus-outline-color: transparentize($action-color, 0.4);
-$focus-outline-width: 3px;
-$focus-outline: $focus-outline-width solid $focus-outline-color;
-$focus-outline-offset: 2px;
-
-// Animations
-$base-duration: 150ms;
-$base-timing: ease;
-*/
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  color: #424649;
-  background: #DDDDDD;
-}
-
+<script type="text/javascript" xml="space">// <![CDATA[
+require([
+  'jquery',
+  'slick',
+  'Magento_Ui/js/modal/modal'
+  ], function ($) {
+    jQuery(document).ready(function () {
+       jQuery(".widget-product-grid").slick({
+        dots: false,
+        arrows: true,
+        speed: 1000,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+      var videoModal = $('#video').modal();
+          $('#openVideo').on('click', function(e) {
+              e.preventDefault();
+              videoModal.modal('openModal');
+          });
+    });
+  });
+]]></script>
+<style xml="space"><!--
 .cms-page-view .column.main img {
   margin: 0;
 }
@@ -67,11 +93,14 @@ body {
 
 .content-wrapper .widget.block-products-list .add-button {
   font-weight: 400;
+  background: none;
+  border: 1px solid #68bebc;
+  color: #68bebc;
 }
 
 .content-wrapper .widget.block-products-list .add-button:hover {
-  background: #00388D;
-  border: 1px solid #00388D;
+  background: #afdddc;
+  border: 1px solid #68bebc;
   color: #fff;
 }
 
@@ -199,11 +228,9 @@ body {
   border: 1px solid #68bebc;
   color: #fff;
 }
-
 .content-wrapper .slick-next, .content-wrapper .slick-arrow {
   border: none;
 }
-
 .scm .hero img {
   width: 992px;
   max-width: none;
@@ -232,10 +259,6 @@ body {
   text-transform: none;
   width: 85%;
   line-height: 1.4;
-}
-
-.scm .info .info-text a {
-  margin-top: 40px;
 }
 
 .science {
@@ -374,8 +397,6 @@ body {
 .video-carousel .video-thumbnail .video-text img {
   display: inline-block;
   margin-right: 22px;
-  width: 40px;
-  vertical-align: middle;
 }
 
 .video-carousel .video-thumbnail .video-text h4 {
@@ -397,7 +418,7 @@ body {
   text-align: center;
 }
 
-.video-carousel .carousel .widget .block-products-list .add-button {
+.video-carousel .carousel .widget.block-products-list .add-button {
   font-weight: 400;
 }
 
@@ -426,7 +447,7 @@ body {
   max-width: 294px;
 }
 
-.products .info .cta a {
+.products .info .cta  a {
   color: #68bebc;
   text-transform: uppercase;
   margin-top: 20px;
@@ -460,7 +481,7 @@ body {
     font-size: 15px;
   }
   .content-wrapper a {
-    color: #68bebc;
+        color: #68bebc;
   }
   .content-wrapper .scm-btn {
     font-size: 18px;
@@ -490,7 +511,7 @@ body {
   }
   .scm .hero .hero-text {
     position: absolute;
-    top: 20px;
+    top: 260px;
     text-align: center;
     width: 100%;
   }
@@ -573,14 +594,14 @@ body {
     text-align: center;
     padding-left: 0;
     margin: 10px auto 20px auto;
-    -webkit-box-ordinal-group: 2;
+   -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
   }
   .story .title h2 {
     margin: 60px auto 20px auto;
     padding: 0;
-    width: 86%;
+   width: 86%;
   }
   .story .microscope {
     display: none;
@@ -661,9 +682,9 @@ body {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-  .content-wrapper a {
-    color: #68bebc;
-  }
+   .content-wrapper a {
+     color: #68bebc;
+   }
   .science, .carousel {
     background: url("https://www.dhccare.com/media/wysiwyg/content/product/scm/brushsteel-t.jpg");
     background-repeat: no-repeat;
@@ -760,7 +781,7 @@ body {
   }
   .products {
     height: 1051px;
-    background: url("https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-products-t.png");
+    background: url('https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-products2-t.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -774,7 +795,92 @@ body {
     max-width: 260px;
   }
 }
-
-
-
-/*# sourceMappingURL=styles.css.map */
+--></style>
+<div class="content-wrapper"><section class="scm">
+<div class="hero"><picture> <source media="(max-width: 599px)" srcset="https://www.dhccare.com/media/wysiwyg/content/product/scm/super-collagen-mist-m.jpg" /> <source media="(max-width: 1024px)" srcset="https://www.dhccare.com/media/wysiwyg/content/product/scm/super-collagen-mist-t.jpg" /> <img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/super-collagen-mist.jpg" alt="" /> </picture>
+<div class="hero-text">
+<h1>Super Collagen Mist</h1>
+</div>
+</div>
+<div class="info">
+<div class="info-text">
+<h1>Super Collagen Mist</h1>
+<h6>Researched and developed by our scientists in Japan, Super Collagen Mist delivers the benefits of skin-firming collagen with the most precise and effective method yet: Dipeptide-8. Hydrate before you apply toner during your morning regimen. Set your makeup with its ultra-fine mist. Refresh throughout the day with a gentle, cooling spray.</h6>
+<div class="scm-cta"><a class="scm-btn" href="https://www.dhccare.com/super-collagen-mist.html">Shop Now</a></div>
+</div>
+</div>
+</section><section class="science"><!-- <div class="supportImg"> -->
+<div class="supportImg-l"><picture> <source media="(max-width: 599px)" srcset="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-beakers-l-m.png" /> <source media="(max-width: 1024px)" srcset="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-beakers-l-t.png" /> <img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-beakers-l.png" alt="" /> </picture></div>
+<!-- </div> -->
+<div class="placard">
+<h2>Dipeptide-8</h2>
+<div class="placardLine"></div>
+<p>DHC&rsquo;s research and development labs in Japan were determined to maximize the benefits of conventional collagen. They developed and patented Dipeptide-8, a smaller skin-firming collagen molecule that instantly absorbs to deliver maximum hydration.</p>
+</div>
+<div class="chemicals">
+<h6>Supported by</h6>
+<div class="chemical">
+<h3>Trehalose</h3>
+<p>Promoting moisture retention, trehalose helps desert plants survive long periods without water.</p>
+</div>
+<div class="chemical">
+<h3>Glycerin</h3>
+<p>A humectant known to prevent moisture loss.</p>
+</div>
+</div>
+<div class="supportImg-r"><picture> <source media="(max-width: 599px)" srcset="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-beaker-r-m.png" /> <source media="(max-width: 1024px)" srcset="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-beaker-r-t.png" /> <img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-beaker-r.png" alt="" /> </picture></div>
+</section><section class="story">
+<div class="title">
+<h2>Unlock the Power of Super Collagen Mist</h2>
+<a class="scm-btn" href="https://www.dhccare.com/super-collagen-mist.html">Shop Now</a></div>
+<div class="microscope"><picture> <source media="(max-width: 1024px)" srcset="https://www.dhccare.com/media/wysiwyg/content/product/scm/dhc-microscope-t.png" /> <img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/dhc-microscope.png" alt="" /> </picture></div>
+<div class="traits">
+<div class="trait">
+<h3>Hydrate</h3>
+<p>Boost your morning regimen with a quick spritz before toner to enjoy skin-firming benefits.</p>
+</div>
+<div class="trait">
+<h3>Set</h3>
+<p>Complete your look with this finishing touch.</p>
+</div>
+<div class="trait">
+<h3>Refresh</h3>
+<p>Carry with you to revive your skin anytime, anywhere.</p>
+</div>
+<!-- <div class="dropsLine"></div> --></div>
+<div class="molecules"><picture> <source media="(max-width: 599px)" srcset="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-molecules-m.png" /> <source media="(max-width: 1024px)" srcset="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-molecules-t.png" /> <img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-molecules2.png" alt="" /> </picture></div>
+</section><section class="video-carousel">
+<div class="video-thumbnail"><a id="openVideo" href="#"> <picture> <source media="(max-width: 599px)" srcset="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-video-m.jpg" /> <img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-video.jpg" alt="" /> </picture></a>
+<div class="video-text"><img class="video-button" src="https://www.dhccare.com/media/wysiwyg/content/product/scm/dhcVideo-play.svg" alt="" />
+<h4>How to Use</h4>
+</div>
+</div>
+<div id="video" style="text-align: center; margin: 40px auto 0 auto; max-width: 800px;">
+<div class="videoWrapper" style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;"><iframe style="position: absolute; text-align: center; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/spYsGtLhSfw?rel=0" width="320" height="240" frameborder="0" allowfullscreen=""></iframe></div>
+</div>
+<script type="text/javascript" xml="space">// <![CDATA[
+// 
+// 
+        require([ 'jquery', 'Magento_Ui/js/modal/modal'], function($){
+          var videoModal = $('#video').modal();
+          $('#openVideo').on('click', function(e) {
+              e.preventDefault();
+              videoModal.modal('openModal');
+          });
+        });
+      
+// 
+// ]]></script>
+<div class="carousel">
+<h2>Explore the Power of Collagen</h2>
+<div class="max-width-container">{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="10" template="product/widget/content/grid.phtml" cache_lifetime="1" conditions_encoded="a:2:[i:1;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Combine`;s:10:`aggregator`;s:3:`all`;s:5:`value`;s:1:`1`;s:9:`new_child`;s:0:``;]s:4:`1--1`;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Product`;s:9:`attribute`;s:12:`category_ids`;s:8:`operator`;s:2:`==`;s:5:`value`;s:2:`78`;]]"}}</div>
+</div>
+</section><section class="products">
+<div class="info">
+<h2>Deliver Collagen to Your Skin</h2>
+<div class="productsLine"></div>
+<p>Learn more about this essential skin-firming ingredient.</p>
+<p class="cta"><a href="https://www.dhccare.com/blog/collagen-101">Explore &gt;</a></p>
+</div>
+<div class="productsImg-mobile"><img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-products2-m.png" alt="" /></div>
+</section></div>
