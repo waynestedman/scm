@@ -7,9 +7,6 @@
   <link rel="stylesheet" href="./ae-css/styles-l.css">
   <!-- <link rel="stylesheet" type="text/css" media="all" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="./dest/css/styles.css">
-  <script type="text/javascript" src="./lib/jquery-1.12.4.min.js"></script>
-  <script type="text/javascript" src="./lib/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="./src/js/scm-video.js"></script>
   <!-- <link rel="stylesheet" href="./slick/slick.css"/>
   <link rel="stylesheet" href="./slick/slick-theme.css"/> -->
 </head>
@@ -106,22 +103,26 @@
     </section> <!-- story -->
     <section class="video-carousel">
       <div class="video-thumbnail">
-        <a id="openVideo" href="#">
+        <!-- <a id="openVideo" href="#">
+        <script src="https://fast.wistia.com/embed/medias/ozmj3dq5tp.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script> -->
+        <span class="wistia_embed wistia_async_ozmj3dq5tp popover=true popoverContent=link" style="display:inline;position:relative"><a id="openVideo" href="#">
           <picture>
-            <source media="(max-width: 599px)" srcset="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-video-m.jpg" /> <img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-video.jpg" alt="" />
+            <source media="(max-width: 599px)" srcset="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-video-m.jpg">
+            <img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-video.jpg" alt="">
           </picture>
-        </a>
+        </a></span>
         <div class="video-text">
-          <img class="video-button" src="https://www.dhccare.com/media/wysiwyg/content/product/scm/dhcVideo-play.svg" alt="" />
+          <img class="video-button" id="openVideo" src="https://www.dhccare.com/media/wysiwyg/content/product/scm/dhcVideo-play.svg" alt="" />
           <h4>How to Use</h4>
         </div>
       </div>
-      <div id="video" style="text-align: center; margin: 40px auto 0 auto; max-width: 800px;">
+      <!-- <div id="video" style="text-align: center; margin: 40px auto 0 auto; max-width:800px;">
         <div class="videoWrapper" style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">
-          <iframe style="position: absolute; text-align: center; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/spYsGtLhSfw?rel=0" width="320" height="240" frameborder="0" allowfullscreen=""></iframe>
+          <iframe src="https://www.youtube.com/embed/spYsGtLhSfw?rel=0" style="position: absolute; text-align: center; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-      <!-- <script type="text/javascript" xml="space">// <![CDATA[
+      <script type="text/javascript" xml="space">// <![CDATA[
         require([ 'jquery', 'Magento_Ui/js/modal/modal'], function($){
           var videoModal = $('#video').modal();
           $('#openVideo').on('click', function(e) {
@@ -130,10 +131,30 @@
           });
         });
       ]]></script> -->
+      <div class="carousel">
+        <h2>Explore the Power of Collagen</h2>
+        <!-- <div class="max-width-container">{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="10" template="product/widget/content/grid.phtml" cache_lifetime="1" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`category_ids`,`operator`:`==`,`value`:`78`^]^]"}}</div>
+</div> -->
+      </div>
+    </section>
+    <section class="products">
+      <div class="info">
+        <h2>Deliver Collagen to Your Skin</h2>
+        <div class="productsLine"></div>
+        <p>Learn more about this essential skin-firming ingredient.</p>
+        <p class="cta"><a href="https://www.dhccare.com/blog/collagen-101">Explore &gt;</a></p>
+      </div>
+      <div class="productsImg-mobile">
+        <img src="https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-products2-m.png" alt="">
+      </div>
     </section>
   </div> <!-- content wrapper -->
 
-  <!--  <script type="text/javascript" src="./slick/slick.min.js"></script>
+  <script type="text/javascript" src="./lib/jquery-1.12.4.min.js"></script>
+  <!-- <script type="text/javascript" src="./src/js/scm-video.js"></script> -->
+  <!-- <script type="text/javascript" src="./lib/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="./src/js/modal.js"></script>
+  <script type="text/javascript" src="./slick/slick.min.js"></script>
   <script type="text/javascript" src="./src/js/scm.js"></script> -->
 </body>
 </html>
