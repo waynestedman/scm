@@ -10,8 +10,17 @@ body {
 .columns .column.main {
   padding-bottom: 0;
 }
+.modal-popup .modal-header {
+  padding: 0;
+}
+.modal-popup .modal-content {
+  padding: 0 0 2rem 0;
+}
 .modal-popup .modal-footer {
   display: none;
+}
+.modals-overlay {
+  z-index: 1 !important;
 }
 .content-wrapper {
   font-weight: 300;

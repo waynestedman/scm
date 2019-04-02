@@ -37,9 +37,6 @@ $scmTeal: #68bebc;
   .slick-next, .slick-arrow {
     border: none;
   }
-  #video {
-    display: none;
-  }
 }
 
 .scm {
@@ -158,13 +155,6 @@ $scmTeal: #68bebc;
     .trait {
       padding: 24px 10px;
     }
-    // .dropsLine {
-    //   height: 70px;
-    //   width: 570px;
-    //   margin-left: 22%;
-    //   border-left: 1px solid $gray700;
-    //   border-bottom: 1px solid $gray700;
-    // }
   }
   .molecules {
     z-index: 1;
@@ -202,57 +192,5 @@ $scmTeal: #68bebc;
       height: 34px;
       vertical-align: middle;
     }
-  }
-  .carousel {
-    margin-top: -75px;
-    padding: 100px 0;
-    text-align: center;
-
-    .widget .block-products-list .add-button {
-      font-weight: 400;
-      // background: $blue700;
-      // border: 1px solid $blue700;
-      // color: #fff;
-      // padding: 10px 20px;
-      // margin-top: 20px;
-      //
-      // &:hover {
-      //   background: lighten($blue700, 20%);
-      //   border: 1px solid $blue700;
-      //   color: #fff;
-      // }
-    }
-  }
-}
-.products {
-  margin: 0;
-  height: 765px;
-  background: url('https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-products2.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-
-  .info {
-    padding-top: 8%;
-    padding-left: 8.333333%;
-    width: 44%;
-
-    .productsLine {
-      height: 6px;
-      width: 50px;
-      background-color: $scmTeal;
-      margin-bottom: 2rem;
-    }
-    p {
-      max-width: 294px;
-    }
-    .cta a {
-      color: $scmTeal;
-      text-transform: uppercase;
-      margin-top: 20px;
-      font-weight: 400;
-    }
-  }
-  .productsImg-mobile {
-    display: none;
   }
 }

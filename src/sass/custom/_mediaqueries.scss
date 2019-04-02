@@ -171,29 +171,6 @@
       }
     }
   } // video-carousel
-  .products {
-    background: none;
-
-    .info {
-      width: 100%;
-      padding: 0;
-      text-align: center;
-
-      h2 {
-        margin-top: 0;
-      }
-
-      .productsLine {
-        margin: 0 auto 2rem auto;
-      }
-      .cta {
-        margin-bottom: 40px;
-      }
-    }
-    .productsImg-mobile {
-      display: block;
-    }
-  }// products
 } // 365 to 640
 @media only screen and (max-width: 387px) {
   .content-wrapper {
@@ -314,9 +291,6 @@
         width: 70%;
         margin: 0 auto;
       }
-      // .dropsLine {
-      //   display: none;
-      // }
     }
     .molecules {
       width: 80%;
@@ -342,22 +316,4 @@
       }
     }
   } // video-carousel
-  .products {
-    height: 1051px;
-    background: url('https://www.dhccare.com/media/wysiwyg/content/product/scm/scm-products-t.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    .info {
-      width: 66%;
-      padding-top: 0;
-      padding-left: 8%;
-
-      p {
-        width: 60%;
-        max-width: 260px;
-      }
-    }
-  }
-
 } // min 641 to max 1024
