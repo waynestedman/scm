@@ -1,7 +1,6 @@
 <script type="text/javascript" xml="space">// <![CDATA[
 require([
   'jquery',
-  'slick',
   'Magento_Ui/js/modal/modal'
   ], function ($) {
     jQuery(document).ready(function () {
@@ -56,12 +55,15 @@ require([
 .modal-popup .modal-header {
   padding: 0;
 }
+
 .modal-popup .modal-content {
   padding: 0 0 2rem 0;
 }
+
 .modal-popup .modal-footer {
   display: none;
 }
+
 .modals-overlay {
   z-index: 1 !important;
 }
@@ -102,14 +104,11 @@ require([
 
 .content-wrapper .widget.block-products-list .add-button {
   font-weight: 400;
-  background: none;
-  border: 1px solid #68bebc;
-  color: #68bebc;
 }
 
 .content-wrapper .widget.block-products-list .add-button:hover {
-  background: #afdddc;
-  border: 1px solid #68bebc;
+  background: #00388D;
+  border: 1px solid #00388D;
   color: #fff;
 }
 
@@ -237,9 +236,11 @@ require([
   border: 1px solid #68bebc;
   color: #fff;
 }
+
 .content-wrapper .slick-next, .content-wrapper .slick-arrow {
   border: none;
 }
+
 .scm .hero img {
   width: 992px;
   max-width: none;
@@ -268,6 +269,10 @@ require([
   text-transform: none;
   width: 85%;
   line-height: 1.4;
+}
+
+.scm .info .info-text a {
+  margin-top: 40px;
 }
 
 .science {
@@ -406,6 +411,8 @@ require([
 .video-carousel .video-thumbnail .video-text img {
   display: inline-block;
   margin-right: 22px;
+  width: 40px;
+  vertical-align: middle;
 }
 
 .video-carousel .video-thumbnail .video-text h4 {
@@ -419,52 +426,6 @@ require([
   width: 34px;
   height: 34px;
   vertical-align: middle;
-}
-
-.video-carousel .carousel {
-  margin-top: -75px;
-  padding: 100px 0;
-  text-align: center;
-}
-
-.video-carousel .carousel .widget.block-products-list .add-button {
-  font-weight: 400;
-}
-
-.products {
-  margin: 0;
-  height: 765px;
-  background: url("/media/wysiwyg/content/product/scm/scm-products2.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.products .info {
-  padding-top: 8%;
-  padding-left: 8.333333%;
-  width: 44%;
-}
-
-.products .info .productsLine {
-  height: 6px;
-  width: 50px;
-  background-color: #68bebc;
-  margin-bottom: 2rem;
-}
-
-.products .info p {
-  max-width: 294px;
-}
-
-.products .info .cta  a {
-  color: #68bebc;
-  text-transform: uppercase;
-  margin-top: 20px;
-  font-weight: 400;
-}
-
-.products .productsImg-mobile {
-  display: none;
 }
 
 @media only screen and (max-width: 599px) {
@@ -490,7 +451,7 @@ require([
     font-size: 15px;
   }
   .content-wrapper a {
-        color: #68bebc;
+    color: #68bebc;
   }
   .content-wrapper .scm-btn {
     font-size: 18px;
@@ -520,7 +481,7 @@ require([
   }
   .scm .hero .hero-text {
     position: absolute;
-    top: 260px;
+    top: 20px;
     text-align: center;
     width: 100%;
   }
@@ -603,14 +564,14 @@ require([
     text-align: center;
     padding-left: 0;
     margin: 10px auto 20px auto;
-   -webkit-box-ordinal-group: 2;
+    -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
   }
   .story .title h2 {
     margin: 60px auto 20px auto;
     padding: 0;
-   width: 86%;
+    width: 86%;
   }
   .story .microscope {
     display: none;
@@ -642,26 +603,6 @@ require([
     margin-right: 6px;
     margin-left: 10px;
   }
-  .products {
-    background: none;
-  }
-  .products .info {
-    width: 100%;
-    padding: 0;
-    text-align: center;
-  }
-  .products .info h2 {
-    margin-top: 0;
-  }
-  .products .info .productsLine {
-    margin: 0 auto 2rem auto;
-  }
-  .products .info .cta {
-    margin-bottom: 40px;
-  }
-  .products .productsImg-mobile {
-    display: block;
-  }
 }
 
 @media only screen and (max-width: 387px) {
@@ -691,9 +632,9 @@ require([
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-   .content-wrapper a {
-     color: #68bebc;
-   }
+  .content-wrapper a {
+    color: #68bebc;
+  }
   .science, .carousel {
     background: url("/media/wysiwyg/content/product/scm/brushsteel-t.jpg");
     background-repeat: no-repeat;
@@ -788,108 +729,123 @@ require([
     width: 500px;
     margin: 0 auto;
   }
-  .products {
-    height: 1051px;
-    background: url('/media/wysiwyg/content/product/scm/scm-products2-t.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-  .products .info {
-    width: 66%;
-    padding-top: 0;
-    padding-left: 8%;
-  }
-  .products .info p {
-    width: 60%;
-    max-width: 260px;
-  }
 }
 --></style>
-<div class="content-wrapper"><section class="scm">
-<div class="hero"><picture> <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/super-collagen-mist-m.jpg" /> <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/super-collagen-mist-t.jpg" /> <img src="/media/wysiwyg/content/product/scm/super-collagen-mist.jpg" alt="" /> </picture>
-<div class="hero-text">
-<h1>Super Collagen Mist</h1>
-</div>
-</div>
-<div class="info">
-<div class="info-text">
-<h1>Super Collagen Mist</h1>
-<h6>Researched and developed by our scientists in Japan, Super Collagen Mist delivers the benefits of skin-firming collagen with the most precise and effective method yet: Dipeptide-8. Hydrate before you apply toner during your morning regimen. Set your makeup with its ultra-fine mist. Refresh throughout the day with a gentle, cooling spray.</h6>
-<div class="scm-cta"><a class="scm-btn" href="/super-collagen-mist.html">Shop Now</a></div>
-</div>
-</div>
-</section><section class="science"><!-- <div class="supportImg"> -->
-<div class="supportImg-l"><picture> <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/scm-beakers-l-m.png" /> <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/scm-beakers-l-t.png" /> <img src="/media/wysiwyg/content/product/scm/scm-beakers-l.png" alt="" /> </picture></div>
-<!-- </div> -->
-<div class="placard">
-<h2>Dipeptide-8</h2>
-<div class="placardLine"></div>
-<p>DHC&rsquo;s research and development labs in Japan were determined to maximize the benefits of conventional collagen. They developed and patented Dipeptide-8, a smaller skin-firming collagen molecule that instantly absorbs to deliver maximum hydration.</p>
-</div>
-<div class="chemicals">
-<h6>Supported by</h6>
-<div class="chemical">
-<h3>Trehalose</h3>
-<p>Promoting moisture retention, trehalose helps desert plants survive long periods without water.</p>
-</div>
-<div class="chemical">
-<h3>Glycerin</h3>
-<p>A humectant known to prevent moisture loss.</p>
-</div>
-</div>
-<div class="supportImg-r"><picture> <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/scm-beaker-r-m.png" /> <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/scm-beaker-r-t.png" /> <img src="/media/wysiwyg/content/product/scm/scm-beaker-r.png" alt="" /> </picture></div>
-</section><section class="story">
-<div class="title">
-<h2>Unlock the Power of Super Collagen Mist</h2>
-<a class="scm-btn" href="/super-collagen-mist.html">Shop Now</a></div>
-<div class="microscope"><picture> <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/dhc-microscope-t.png" /> <img src="/media/wysiwyg/content/product/scm/dhc-microscope.png" alt="" /> </picture></div>
-<div class="traits">
-<div class="trait">
-<h3>Hydrate</h3>
-<p>Boost your morning regimen with a quick spritz before toner to enjoy skin-firming benefits.</p>
-</div>
-<div class="trait">
-<h3>Set</h3>
-<p>Complete your look with this finishing touch.</p>
-</div>
-<div class="trait">
-<h3>Refresh</h3>
-<p>Carry with you to revive your skin anytime, anywhere.</p>
-</div>
-<!-- <div class="dropsLine"></div> --></div>
-<div class="molecules"><picture> <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/scm-molecules-m.png" /> <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/scm-molecules-t.png" /> <img src="/media/wysiwyg/content/product/scm/scm-molecules2.png" alt="" /> </picture></div>
-</section><section class="video-carousel">
-<div class="video-thumbnail"><a id="openVideo" href="#"> <picture> <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/scm-video-m.jpg" /> <img src="/media/wysiwyg/content/product/scm/scm-video.jpg" alt="" /> </picture></a>
-<div class="video-text"><img class="video-button" src="/media/wysiwyg/content/product/scm/dhcVideo-play.svg" alt="" />
-<h4>How to Use</h4>
-</div>
-</div>
-<div id="video" style="text-align: center; margin: 40px auto 0 auto; max-width: 800px;">
-<div class="videoWrapper" style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;"><iframe style="position: absolute; text-align: center; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/spYsGtLhSfw?rel=0" width="320" height="240" frameborder="0" allowfullscreen=""></iframe></div>
-</div>
-<script type="text/javascript" xml="space">// <![CDATA[
-//
-//
-        require([ 'jquery', 'Magento_Ui/js/modal/modal'], function($){
-          var videoModal = $('#video').modal();
-          $('#openVideo').on('click', function(e) {
-              e.preventDefault();
-              videoModal.modal('openModal');
-          });
+<div class="content-wrapper">
+  <section class="scm">
+    <div class="hero">
+      <picture>
+        <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/super-collagen-mist-m.jpg">
+        <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/super-collagen-mist-t.jpg">
+        <img src="/media/wysiwyg/content/product/scm/super-collagen-mist.jpg" alt="">
+      </picture>
+      <div class="hero-text">
+        <h1>Super Collagen Mist</h1>
+      </div>
+    </div>
+    <div class="info">
+      <div class="info-text">
+        <h1>Super Collagen Mist</h1>
+        <h6>Researched and developed by our scientists in Japan, Super Collagen Mist delivers the benefits of skin-firming collagen with the most precise and effective method yet: Dipeptide-8. Hydrate before you apply toner during your morning regimen. Set your make-up with its ultra-fine mist. Refresh throughout the day with a gentle, cooling spray.</h6>
+        <div class="scm-cta">
+          <a href="/super-collagen-mist.html" role="button" aria-disabled="true" class="scm-btn">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="science">
+    <!-- <div class="supportImg"> -->
+      <div class="supportImg-l">
+        <picture>
+          <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/scm-beakers-l-m.png">
+          <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/scm-beakers-l-t.png">
+          <img src="/media/wysiwyg/content/product/scm/scm-beakers-l.png" alt="">
+        </picture>
+      </div>
+    <!-- </div> -->
+    <div class="placard">
+      <h2>Dipeptide-8</h2>
+      <div class="placardLine"></div>
+      <p>DHC’s research and development labs in Japan were determined to maximise the benefits of conventional collagen. They developed and patented Dipeptide-8, a smaller skin-firming collagen molecule that instantly absorbs to deliver maximum hydration.</p>
+    </div>
+    <div class="chemicals">
+      <h6>Supported by</h6>
+      <div class="chemical">
+        <h3>Trehalose</h3>
+        <p>Promoting moisture retention, trehalose helps desert plants survive long periods without water.</p>
+      </div>
+      <div class="chemical">
+        <h3>Glycerin</h3>
+        <p>A humectant known to prevent moisture loss.</p>
+      </div>
+    </div>
+    <div class="supportImg-r">
+      <picture>
+        <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/scm-beaker-r-m.png">
+        <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/scm-beaker-r-t.png">
+        <img src="/media/wysiwyg/content/product/scm/scm-beaker-r.png" alt="">
+      </picture>
+    </div>
+  </section>
+  <section class="story">
+    <div class="title">
+      <h2>Unlock the Power of Super Collagen Mist</h2>
+      <a href="/super-collagen-mist.html" role="button" aria-disabled="true" class="scm-btn">Shop Now</a>
+    </div>
+    <div class="microscope">
+      <picture>
+        <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/dhc-microscope-t.png">
+        <img src="/media/wysiwyg/content/product/scm/dhc-microscope.png" alt="">
+      </picture>
+    </div>
+    <div class="traits">
+      <div class="trait">
+        <h3>Hydrate</h3>
+        <p>Boost your morning regimen with a quick spritz before toner to enjoy skin firming benefits.</p>
+      </div>
+      <div class="trait">
+        <h3>Set</h3>
+        <p>Complete your look with this finishing touch.</p>
+      </div>
+      <div class="trait">
+        <h3>Refresh</h3>
+        <p>Carry with you to revive your skin anytime, anywhere.</p>
+      </div>
+      <!-- <div class="dropsLine"></div> -->
+    </div>
+    <div class="molecules">
+      <picture>
+        <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/scm-molecules-m.png">
+        <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/scm-molecules-t.png">
+        <img src="/media/wysiwyg/content/product/scm/scm-molecules2.png" alt="">
+      </picture>
+    </div>
+  </section> <!-- story -->
+  <section class="video-carousel">
+    <div class="video-thumbnail">
+      <a id="openVideo" href="#">
+        <picture>
+          <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/scm-video-m.jpg" /> <img src="/media/wysiwyg/content/product/scm/scm-video.jpg" alt="click to watch a video showing how to use the Super Collagen Mist spray" />
+        </picture>
+      </a>
+      <div class="video-text">
+        <img class="video-button" src="/media/wysiwyg/content/product/scm/dhcVideo-play.svg" alt="Video play button" />
+        <h4>How to Use</h4>
+      </div>
+    </div>
+    <div id="video" style="text-align: center; margin: 0 auto; max-width: 800px;">
+      <div class="videoWrapper" style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">
+        <iframe style="position: absolute; text-align: center; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/spYsGtLhSfw?rel=0" width="320" height="240" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+    </div>
+    <script type="text/javascript" xml="space">// <![CDATA[
+      require([ 'jquery', 'Magento_Ui/js/modal/modal'], function($){
+        var videoModal = $('#video').modal();
+        $('#openVideo').on('click', function(e) {
+            e.preventDefault();
+            videoModal.modal('openModal');
         });
-
-//
-// ]]></script>
-<div class="carousel">
-<h2>Explore the Power of Collagen</h2>
-<div class="max-width-container">{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="10" template="product/widget/content/grid.phtml" cache_lifetime="1" conditions_encoded="a:2:[i:1;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Combine`;s:10:`aggregator`;s:3:`all`;s:5:`value`;s:1:`1`;s:9:`new_child`;s:0:``;]s:4:`1--1`;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Product`;s:9:`attribute`;s:12:`category_ids`;s:8:`operator`;s:2:`==`;s:5:`value`;s:2:`78`;]]"}}</div>
-</div>
-</section><section class="products">
-<div class="info">
-<h2>Deliver Collagen to Your Skin</h2>
-<div class="productsLine"></div>
-<p>Learn more about this essential skin-firming ingredient.</p>
-<p class="cta"><a href="/blog/collagen-101">Explore &gt;</a></p>
-</div>
-<div class="productsImg-mobile"><img src="/media/wysiwyg/content/product/scm/scm-products2-m.png" alt="" /></div>
-</section></div>
+      });
+    ]]></script>
+  </section>
+</div> <!-- content wrapper -->
