@@ -193,6 +193,10 @@ body {
   border: none;
 }
 
+.content-wrapper #video {
+  display: none;
+}
+
 .scm .hero img {
   width: 992px;
   max-width: none;

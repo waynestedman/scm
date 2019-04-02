@@ -6,13 +6,17 @@ $(document).ready(function(){
   //     videoModal.modal('openModal');
   // });
   $('#openVideo').on('click', function() {
-    $( "#video" ).dialog({
-      modal: true,
-      buttons: {
-        Ok: function() {
-          $( this ).dialog( "close" );
-        }
-      }
-    });
-  }
+    var modalVideo = document.getElementById('video');
+
+    modalVideo.style.display = "block";
+
+    // $( "#video" ).dialog({
+    //   modal: true,
+    //   buttons: {
+    //     Ok: function() {
+    //       $( this ).dialog( "close" );
+    //     }
+    //   }
+    // });
+  } // onClick
 }); // doc ready
