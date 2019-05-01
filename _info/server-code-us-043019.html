@@ -1,0 +1,892 @@
+<script type="text/javascript" xml="space">// <![CDATA[
+//
+require([
+  'jquery',
+  'slick',
+  'Magento_Ui/js/modal/modal'
+  ], function ($) {
+    jQuery(document).ready(function () {
+       jQuery(".widget-product-grid").slick({
+        dots: false,
+        arrows: true,
+        speed: 1000,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+      var videoModal = $('#video').modal();
+          $('#openVideo').on('click', function(e) {
+              e.preventDefault();
+              videoModal.modal('openModal');
+          });
+    });
+  });
+// ]]></script>
+<style xml="space"><!--
+.cms-page-view .column.main img {
+  margin: 0;
+}
+
+.columns .column.main {
+  padding-bottom: 0;
+}
+
+.modal-popup .modal-header {
+  padding: 0;
+}
+.modal-popup .modal-content {
+  padding: 0 0 2rem 0;
+}
+.modal-popup .modal-footer {
+  display: none;
+}
+.modals-overlay {
+  z-index: 1 !important;
+}
+
+.content-wrapper {
+  font-weight: 300;
+  max-width: 1280px;
+  margin: 0 auto;
+  line-height: 1.4;
+  background: #fff;
+}
+
+.content-wrapper .row {
+  margin: 0;
+}
+
+.content-wrapper .column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content-wrapper .block-title {
+  text-align: center;
+  margin: 0;
+}
+
+.content-wrapper .widget .block-title > strong {
+  font-size: 4rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+.content-wrapper .block.widget .products-grid .product-item {
+  margin: 0;
+}
+
+.content-wrapper .widget.block-products-list .add-button {
+  font-weight: 400;
+  background: none;
+  border: 1px solid #68bebc;
+  color: #68bebc;
+}
+
+.content-wrapper .widget.block-products-list .add-button:hover {
+  background: #afdddc;
+  border: 1px solid #68bebc;
+  color: #fff;
+}
+
+.content-wrapper .product-item-link {
+  text-transform: none;
+}
+
+.content-wrapper .widget.block-products-list .product-item-name {
+  height: 52px;
+}
+
+.content-wrapper .price-wrapper {
+  font-weight: 400;
+}
+
+.content-wrapper h1 {
+  font-size: 70px;
+}
+
+.content-wrapper h2 {
+  font-size: 60px;
+}
+
+.content-wrapper h3 {
+  font-size: 50px;
+}
+
+.content-wrapper h4 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.content-wrapper h5 {
+  font-size: 30px;
+  margin-top: 2.6rem;
+  margin-bottom: .4rem;
+}
+
+.content-wrapper h6 {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.content-wrapper p {
+  font-size: 18px;
+}
+
+.content-wrapper .weight400 {
+  font-weight: 400;
+}
+
+.content-wrapper a {
+  text-decoration: none;
+  color: #212121;
+  cursor: pointer;
+}
+
+.content-wrapper button {
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.content-wrapper .cta {
+  font-weight: 400;
+}
+
+.content-wrapper .cta:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content-wrapper .slick-arrow {
+  background: none;
+}
+
+.content-wrapper .linkCTA {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.scm, .science, .story, .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.science, .carousel {
+  background: url("/media/wysiwyg/content/product/scm/brushsteel.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 1280px;
+}
+
+.content-wrapper h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.content-wrapper .scm-btn {
+  position: absolute;
+  background: #68bebc;
+  border: 1px solid #68bebc;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content-wrapper .scm-btn:hover {
+  background: #afdddc;
+  border: 1px solid #68bebc;
+  color: #fff;
+}
+.content-wrapper .slick-next, .content-wrapper .slick-arrow {
+  border: none;
+}
+.scm .hero img {
+  width: 992px;
+  max-width: none;
+}
+
+.scm .hero h1 {
+  display: none;
+}
+
+.scm .info {
+  margin-left: -450px;
+  background: url("/media/wysiwyg/content/product/scm/molecule-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 110%;
+  background-size: 40% 40%;
+}
+
+.scm .info .info-text {
+  padding-top: 80px;
+  padding-right: 60px;
+  padding-bottom: 80px;
+  padding-left: 40px;
+}
+
+.scm .info .info-text h6 {
+  text-transform: none;
+  width: 85%;
+  line-height: 1.4;
+}
+
+.science {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.science .supportImg-l {
+  width: 30%;
+  margin-top: 80px;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.science .supportImg-r {
+  width: 20%;
+  float: right;
+  margin-left: 40px;
+  margin-top: 20px;
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.science .placard {
+  width: 50%;
+  height: 400px;
+  text-align: center;
+  padding: 30px 80px;
+  margin: 50px 0 50px -80px;
+  background-color: rgba(226, 251, 250, 0.15);
+  border-top: 2px solid #419896;
+  border-right: 1px solid #68bebc;
+  border-bottom: 2px solid #419896;
+  border-left: 1px solid #68bebc;
+  -webkit-box-shadow: -4px 8px 20px 0px rgba(27, 63, 62, 0.2);
+  box-shadow: -4px 8px 20px 0px rgba(27, 63, 62, 0.2);
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.science .placard .placardLine {
+  height: 6px;
+  width: 50px;
+  background-color: #68bebc;
+  margin: 0 auto 2rem auto;
+}
+
+.science .chemicals {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 40%;
+  margin-top: -340px;
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+.science h6 {
+  margin: 0 auto 20px auto;
+  text-align: center;
+  color: #68bebc;
+  font-weight: 600;
+}
+
+.science .chemical {
+  padding: 0 60px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.story {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.story .title {
+  width: 60%;
+  padding-left: 10%;
+  margin-top: 24px;
+}
+
+.story .microscope {
+  width: 35%;
+  margin: -180px 0 -250px 0;
+  height: 800px;
+}
+
+.story .traits {
+  width: 30%;
+  padding-left: 8.333333%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 99;
+}
+
+.story .traits h3 {
+  color: #68bebc;
+}
+
+.story .traits .trait {
+  padding: 24px 10px;
+}
+
+.story .molecules {
+  z-index: 1;
+  width: 70%;
+  padding-left: 40px;
+  margin-bottom: 24px;
+}
+
+.video-carousel .video-thumbnail {
+  max-width: 1068px;
+  max-height: 150px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.video-carousel .video-thumbnail .video-text {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+}
+
+.video-carousel .video-thumbnail .video-text img {
+  display: inline-block;
+  margin-right: 22px;
+}
+
+.video-carousel .video-thumbnail .video-text h4 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.video-carousel .video-thumbnail .video-button {
+  margin-right: 20px;
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
+}
+
+.video-carousel .carousel {
+  margin-top: -75px;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.video-carousel .carousel .widget.block-products-list .add-button {
+  font-weight: 400;
+}
+
+.products {
+  margin: 0;
+  height: 765px;
+  background: url("/media/wysiwyg/content/product/scm/scm-products2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.products .info {
+  padding-top: 8%;
+  padding-left: 8.333333%;
+  width: 44%;
+}
+
+.products .info .productsLine {
+  height: 6px;
+  width: 50px;
+  background-color: #68bebc;
+  margin-bottom: 2rem;
+}
+
+.products .info p {
+  max-width: 294px;
+}
+
+.products .info .cta  a {
+  color: #68bebc;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.products .productsImg-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 599px) {
+  .cms-page-view .column.main p {
+    margin: 0 auto 10px auto;
+  }
+  .content-wrapper h1 {
+    font-size: 45px;
+  }
+  .content-wrapper h2 {
+    font-size: 45px;
+  }
+  .content-wrapper h3 {
+    font-size: 39px;
+  }
+  .content-wrapper h4 {
+    font-size: 30px;
+  }
+  .content-wrapper h6 {
+    font-size: 18px;
+  }
+  .content-wrapper p {
+    font-size: 15px;
+  }
+  .content-wrapper a {
+        color: #68bebc;
+  }
+  .content-wrapper .scm-btn {
+    font-size: 18px;
+    position: relative;
+  }
+  .scm, .science, .story, .products {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .science, .carousel {
+    background: url("/media/wysiwyg/content/product/scm/brushsteel-m.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 640px;
+  }
+  .scm {
+    width: 100%;
+  }
+  .scm .hero img {
+    max-width: 640px;
+    width: 100%;
+  }
+  .scm .hero .hero-text {
+    position: absolute;
+    top: 260px;
+    text-align: center;
+    width: 100%;
+  }
+  .scm .hero .hero-text h1 {
+    display: inline-block;
+    font-size: 36px;
+  }
+  .scm .info {
+    margin-top: -220px;
+    margin-left: 0;
+    background: none;
+    text-align: center;
+    width: 100%;
+  }
+  .scm .info .info-text {
+    padding: 10px 20px;
+    color: #FFFFFF;
+  }
+  .scm .info .info-text h1 {
+    display: none;
+  }
+  .scm .info .info-text h6 {
+    width: 100%;
+    font-size: 15px;
+    margin: 0 0 18px 0;
+  }
+  .scm .info .info-text .scm-cta {
+    height: 30px;
+  }
+  .science {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .science .supportImg-l {
+    width: 30%;
+    height: 100px;
+    margin: 0;
+    margin-left: -20px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .science .placard {
+    margin: 50px 10px -20px 10px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    max-width: 640px;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .science .chemicals {
+    margin-top: 0;
+    padding: 0 10px;
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  .science .chemicals .chemical {
+    padding: 0;
+  }
+  .science .supportImg-r {
+    width: 100%;
+    margin: -10px 0 0 0;
+    height: 44px;
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .science .supportImg-r img {
+    width: 12%;
+    float: right;
+  }
+  .story .title {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    margin: 10px auto 20px auto;
+   -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .story .title h2 {
+    margin: 60px auto 20px auto;
+    padding: 0;
+   width: 86%;
+  }
+  .story .microscope {
+    display: none;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .story .traits {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .story .molecules {
+    width: 100%;
+    padding-right: 0;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  .video-carousel .video-thumbnail .video-text {
+    top: 0;
+    left: 0;
+    font-size: 38px;
+  }
+  .video-carousel .video-thumbnail .video-text img {
+    margin-right: 6px;
+    margin-left: 10px;
+  }
+  .products {
+    background: none;
+  }
+  .products .info {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .products .info h2 {
+    margin-top: 0;
+  }
+  .products .info .productsLine {
+    margin: 0 auto 2rem auto;
+  }
+  .products .info .cta {
+    margin-bottom: 40px;
+  }
+  .products .productsImg-mobile {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 387px) {
+  .content-wrapper .scm-btn {
+    margin-top: 0;
+  }
+  .scm .info .info-text .scm-cta {
+    height: 10px;
+  }
+}
+
+@media only screen and (max-width: 363px) {
+  .scm .hero {
+    height: 688px;
+  }
+  .scm .info .info-text {
+    padding-top: 2px;
+  }
+  .scm .info .info-text h6 {
+    margin: 0;
+    font-size: 13px;
+  }
+  .scm .info .info-text .scm-cta {
+    height: 0;
+    margin: 30px 0 16px 0;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+   .content-wrapper a {
+     color: #68bebc;
+   }
+  .science, .carousel {
+    background: url("/media/wysiwyg/content/product/scm/brushsteel-t.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 1024px;
+  }
+  .scm .hero {
+    width: 40%;
+  }
+  .scm .hero img {
+    width: 1024px;
+  }
+  .scm .info {
+    margin-left: 0;
+    background-position: 100% 130%;
+    background-size: 50% 50%;
+  }
+  .scm .info .info-text {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .science {
+    padding-bottom: 70px;
+  }
+  .science .supportImg-l {
+    width: 17%;
+    margin-top: 0;
+    height: 270px;
+  }
+  .science .supportImg-r {
+    margin: 0;
+    width: 12%;
+    height: 450px;
+  }
+  .science .placard {
+    width: 70%;
+    height: 326px;
+    padding: 0 20px;
+    margin: 50px 0 50px -24px;
+  }
+  .science .chemicals {
+    margin-top: 0;
+    width: 70%;
+  }
+  .science .chemicals .chemical {
+    padding: 0;
+  }
+  .story .title {
+    width: 66%;
+    padding-left: 8%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .story .microscope {
+    width: 24%;
+    margin: -180px 0 -250px 0;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .story .traits {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .story .traits .trait {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .story .molecules {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  .video-carousel .video-thumbnail {
+    width: 90%;
+  }
+  .video-carousel .video-thumbnail .video-text {
+    top: 5px;
+    left: 8%;
+  }
+  .video-carousel .carousel {
+    margin-top: -50px;
+  }
+  .video-carousel .carousel h2 {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .products {
+    height: 1051px;
+    background: url('/media/wysiwyg/content/product/scm/scm-products2-t.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .products .info {
+    width: 66%;
+    padding-top: 0;
+    padding-left: 8%;
+  }
+  .products .info p {
+    width: 60%;
+    max-width: 260px;
+  }
+}
+--></style>
+<div class="content-wrapper"><section class="scm">
+<div class="hero"><picture> <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/super-collagen-mist-m.jpg" /> <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/super-collagen-mist-t.jpg" /> <img src="/media/wysiwyg/content/product/scm/super-collagen-mist.jpg" alt="" /> </picture>
+<div class="hero-text">
+<h1>Super Collagen Mist</h1>
+</div>
+</div>
+<div class="info">
+<div class="info-text">
+<h1>Super Collagen Mist</h1>
+<h6>Researched and developed by our scientists in Japan, Super Collagen Mist delivers the benefits of skin-firming collagen with the most precise and effective method yet: Dipeptide-8. Hydrate before you apply toner during your morning regimen. Set your makeup with its ultra-fine mist. Refresh throughout the day with a gentle, cooling spray.</h6>
+<div class="scm-cta"><a class="scm-btn" href="/super-collagen-mist.html">Shop Now</a></div>
+</div>
+</div>
+</section><section class="science"><!-- <div class="supportImg"> -->
+<div class="supportImg-l"><picture> <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/scm-beakers-l-m.png" /> <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/scm-beakers-l-t.png" /> <img src="/media/wysiwyg/content/product/scm/scm-beakers-l.png" alt="" /> </picture></div>
+<!-- </div> -->
+<div class="placard">
+<h2>Dipeptide-8</h2>
+<div class="placardLine"></div>
+<p>DHC&rsquo;s research and development labs in Japan were determined to maximize the benefits of conventional collagen. They developed and patented Dipeptide-8, a smaller skin-firming collagen molecule that instantly absorbs to deliver maximum hydration.</p>
+</div>
+<div class="chemicals">
+<h6>Supported by</h6>
+<div class="chemical">
+<h3>Trehalose</h3>
+<p>Promoting moisture retention, trehalose helps desert plants survive long periods without water.</p>
+</div>
+<div class="chemical">
+<h3>Glycerin</h3>
+<p>A humectant known to prevent moisture loss.</p>
+</div>
+</div>
+<div class="supportImg-r"><picture> <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/scm-beaker-r-m.png" /> <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/scm-beaker-r-t.png" /> <img src="/media/wysiwyg/content/product/scm/scm-beaker-r.png" alt="" /> </picture></div>
+</section><section class="story">
+<div class="title">
+<h2>Unlock the Power of Super Collagen Mist</h2>
+<a class="scm-btn" href="/super-collagen-mist.html">Shop Now</a></div>
+<div class="microscope"><picture> <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/dhc-microscope-t.png" /> <img src="/media/wysiwyg/content/product/scm/dhc-microscope.png" alt="" /> </picture></div>
+<div class="traits">
+<div class="trait">
+<h3>Hydrate</h3>
+<p>Boost your morning regimen with a quick spritz before toner to enjoy skin-firming benefits.</p>
+</div>
+<div class="trait">
+<h3>Set</h3>
+<p>Complete your look with this finishing touch.</p>
+</div>
+<div class="trait">
+<h3>Refresh</h3>
+<p>Carry with you to revive your skin anytime, anywhere.</p>
+</div>
+<!-- <div class="dropsLine"></div> --></div>
+<div class="molecules"><picture> <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/scm-molecules-m.png" /> <source media="(max-width: 1024px)" srcset="/media/wysiwyg/content/product/scm/scm-molecules-t.png" /> <img src="/media/wysiwyg/content/product/scm/scm-molecules2.png" alt="" /> </picture></div>
+</section><section class="video-carousel">
+<div class="video-thumbnail"><a id="openVideo" href="#"> <picture> <source media="(max-width: 599px)" srcset="/media/wysiwyg/content/product/scm/scm-video-m.jpg" /> <img src="/media/wysiwyg/content/product/scm/scm-video.jpg" alt="" /> </picture></a>
+<div class="video-text"><img class="video-button" src="/media/wysiwyg/content/product/scm/dhcVideo-play.svg" alt="" />
+<h4>How to Use</h4>
+</div>
+</div>
+<div id="video" style="text-align: center; margin: 40px auto 0 auto; max-width: 800px;">
+<div class="videoWrapper" style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;"><iframe style="position: absolute; text-align: center; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/spYsGtLhSfw?rel=0" width="320" height="240" frameborder="0" allowfullscreen=""></iframe></div>
+</div>
+<script type="text/javascript" xml="space">// <![CDATA[
+        require([ 'jquery', 'Magento_Ui/js/modal/modal'], function($){
+          var videoModal = $('#video').modal();
+          $('#openVideo').on('click', function(e) {
+              e.preventDefault();
+              videoModal.modal('openModal');
+          });
+        });
+]]></script>
+<div class="carousel">
+<h2>Explore the Power of Collagen</h2>
+<div class="max-width-container">{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="10" template="product/widget/content/grid.phtml" cache_lifetime="1" conditions_encoded="a:2:[i:1;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Combine`;s:10:`aggregator`;s:3:`all`;s:5:`value`;s:1:`1`;s:9:`new_child`;s:0:``;]s:4:`1--1`;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Product`;s:9:`attribute`;s:12:`category_ids`;s:8:`operator`;s:2:`==`;s:5:`value`;s:2:`78`;]]"}}</div>
+</div>
+</section><section class="products">
+<div class="info">
+<h2>Deliver Collagen to Your Skin</h2>
+<div class="productsLine"></div>
+<p>Learn more about this essential skin-firming ingredient.</p>
+<p class="cta"><a href="/blog/collagen-101">Explore &gt;</a></p>
+</div>
+<div class="productsImg-mobile"><img src="/media/wysiwyg/content/product/scm/scm-products2-m.png" alt="" /></div>
+</section></div>
